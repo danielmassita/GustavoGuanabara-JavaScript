@@ -671,4 +671,5 @@ o nosso encontro para a próxima aula, onde a gente vai dar os primeiros passos 
 Um grande abraço e até a próxima!
 24:28
 Legendas: Tainá Bandeira
+FIM
 */
