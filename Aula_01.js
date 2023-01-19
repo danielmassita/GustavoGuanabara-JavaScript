@@ -86,3 +86,11 @@ O HTML é o esqueleto, composto dos ossos que o sustenta. O CSS é a pele, cabel
 
 */
 
+alert("Olá, Mundo!");
+prompt.alert("Olá, Mundo 2!");
+alert("Olá, Mundo!")
+document.body.style.background = 'black'
+document.querySelector('img#hplogo').style.filter = 'grayScale(100%)'
+document.querySelector('img#hplogo').style.visibility = 'hidden'
+document.querySelector('span.bstn-hl-title').innerText = "Daniel e Bia, casal apeixonades, vão começar a estudar Programação e redesenharão a rota de vida, agora à três!"
+
