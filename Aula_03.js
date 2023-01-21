@@ -7,3 +7,4 @@ Pois, para responder a essas e muitas outras perguntas, assista essa aula do Cur
 
 Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor Gustavo Guanabara para o canal CursoemVideo.
 */
+
