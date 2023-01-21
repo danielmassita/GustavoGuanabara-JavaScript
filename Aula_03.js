@@ -30,3 +30,9 @@ COMO APRENDER?
 - estudar junto, interagir com outras pessoas... 
 - projetos próprios (errar, pedir ajuda, persistir, estudar, resolver solo e em equipe)...
 
+BIBLIOGRAFIA RECOMENDADA
+- FLANAGAN, David. Javascript - O Guia Definitivo. Ed. O'Reilly. 
+- SILVA, Maurício Samy. Javascript - O Guia do Programador. Ed. 
+- Guia de Referência da Mozilla - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+- Guia de Referência da ECMA - https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
+
