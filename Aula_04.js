@@ -35,3 +35,39 @@ NOSSOS PRIMEIROS SCRIPTS
 - No final do <body>, antes do </body> vamos adicionar a tag <script> pra rodar depois de carregar todo o body.
 - digitar window.alert('Meu primeiro script...');
 */
+
+/*CÓDIGO FINAL DA AULA
+
+Aula_04_ex001.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(67, 67, 230);
+            color: #FFFFFF;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da "maldição"...</p>
+    Olá, Mundo! Mas aqui é só um texto, sem ser título nem nada... 
+
+    <script>
+        window.alert('Minha primeira mensagem...');
+        window.confirm('Está gostando de JavaScript?');
+        window.prompt("Qual é o seu nome?");
+    </script>
+</body>
+</html>
+
