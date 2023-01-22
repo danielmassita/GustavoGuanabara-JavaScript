@@ -17,3 +17,21 @@ PERGUNTAS AULA ANTERIOR
 - Quais programas pra instalar? Google Chrome (navegador) + VS Code (escritor de códigos) + Node.js (backend). 
 */
 
+/*
+NOSSOS PRIMEIROS SCRIPTS
+- Tríade de documentos: conteúdo (HTML), design (CSS) e interatividade (JS).
+- Abrir o Google Chrome e VS Code.
+- Organizar bem uma pasta e arquivos (no meu caso, até no GitHub).
+- Criar arquivo ex001.html
+- digitar html no corpo do arquivo e selecionar 
+- html:5
+- Entender a <head> e a <body>, primeiro são configurações, título, etc... 
+- "Olá, Mundo!" é a primeira coisa de qualquer código...
+- <h1> Tag de título nível 1
+- <p> Tag de parágrafo
+- <style> Tag de estilo dentro do <head>, que configura geral
+- body {background-color: RGB(67, 67, 230)}
+- Você não programa em HTML, você não programa em CSS, mas vamos programar em Javascript...
+- No final do <body>, antes do </body> vamos adicionar a tag <script> pra rodar depois de carregar todo o body.
+- digitar window.alert('Meu primeiro script...');
+*/
