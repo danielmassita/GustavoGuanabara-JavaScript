@@ -19,6 +19,44 @@ PERGUNTAS AULA ANTERIOR
     window.prompt()
 </script>
 
+/*
+ANOTAÇÕES
+- Aprendemos na aula anterior os 3 comandos do JS. Mas, na aula anterior, pra onde vão os dados? Não foram, pois não foram guardados.
+- Aprendendo a COMENTAR os códigos...
+
+// para comentar uma linha...
+
+/*
+    para comentar 
+    várias linhas
+    do código
+*/
+
+/*
+VARIÁVEIS
+- terreno pra um estacionamento...
+- vagas são a marca física dos carros...
+- vagas identificadas (a1, a2, a3...)
+- vagas pra automóveis (a1, a2, ..., a6), caminhões (c1, ..., c4), motos (m1, ..., m6)...
+- No jjavascript, o sinal de = é uma ATRIBUIÇÃO (o sinal = significa RECEBE)...
+- vaga a1 = carro1, chegando um novo carro...
+- vaga a1 = carro2, retirando o carro a1...
+- vaga a1 = null (retirar o carro e ficar vazia)...
+- o espaço no terreno são os espaços na memória para os dados...
+
+var n1 = 5
+var n2 = 8.5
+var n3 = 15
+
+- existem VARIÁVEIS DE TAMANHOS DIFERENTES (strings são delimitados)
+
+var s1 = "JavaScript" (aspas duplas)
+var s2 = 'Curso em Vídeo' (apóstrofo)
+var s3 = `Guanabara` (crase)
+*/
+
+
+
 
 /* TRANSCRIÇÃO
 0:00
