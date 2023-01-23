@@ -7,6 +7,19 @@ Pois, para responder a essas e muitas outras perguntas, assista essa aula do Cur
 
 Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor Gustavo Guanabara para o canal CursoemVideo.*/
 
+/* 
+PERGUNTAS AULA ANTERIOR
+- Você sabe organizar pastas no VS Code? Sim, e atualizar no Github também...
+- Node.js está instalado? Sim, serve pra rodar o JavaScript sem a interface do front-end (navegador), ou no server-side.
+- Sabe diferenciar HTML, CSS e JS? Sim.
+- Sabe disparar alertas, confirmações e perguntas? Sim.
+<script>
+    window.alert()
+    window.confirm()
+    window.prompt()
+</script>
+
+
 /* TRANSCRIÇÃO
 0:00
 Como de costume, antes da aula, eu vou te fazer quatro perguntas: Em primeiro lugar, você já aprendeu como se gerencia pastas utilizando o Visual Studio Code?
