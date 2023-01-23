@@ -111,7 +111,30 @@ undefined
 13
 > Ctrl+L (limpar o terminal)
 
+DICAS
+- maiúsculas e minúsculas fazem diferença...
+- tente usar nomes coerentes para as variáveis... 
+- evite ser um programador alfabeto (a, b, c, d... x,y,z) ou contador (n1, n2, n3...)
+- use nomes práticos para os dados (var nome, var idade, var cpf...)
+- para tratar DADOS
 
+ORGANIZANDO DADOS (SEPARANDO)
+{5      18      -12}    números inteiros
+{0.5    -15.9   3.14    8.0}    números reais/flutuantes
+TIPO NUMBER
+
+{
+    true
+    false
+}
+TIPO BOOLEAN
+
+{
+    "Google"
+    'JavaScript'
+    `Maria`
+}
+TIPO STRING (pode ser uma cadeia de números, cpf, telefone, etc.)
 */
 
 /* TRANSCRIÇÃO
