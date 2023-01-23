@@ -137,6 +137,51 @@ TIPO BOOLEAN
 TIPO STRING (pode ser uma cadeia de números, cpf, telefone, etc.)
 */
 
+/* 
+DATA TYPES NO JAVASCRIPT
+- string
+- boolean
+- number
+    Infinity
+    NAn
+- null
+- undefined
+- object []
+    Array {}
+- function (paradigma funcional no JS)
+
+COMANDO TYPEOF
+ABRIR NODE.JS
+> var n = 200
+undefined
+> n
+200
+> typeof n
+'number'
+> n = "Google"
+'Google'
+> typeof n
+'string'
+> typeof []
+'object'
+> typeof {}
+'object'
+> typeof function(){}
+'function'
+> typeof undefined
+undefined
+> typeof infinity
+'number'
+> typeof NaN
+'number'
+> typeof null
+'object' (no JavaScript isso é curioso e talvez um pouco chato... null é objeto!)
+
+- A variável no JS vai mudando, mas os tipos são flexíveis e dependem dos dados...
+
+
+*/
+
 /* TRANSCRIÇÃO
 0:00
 Como de costume, antes da aula, eu vou te fazer quatro perguntas: Em primeiro lugar, você já aprendeu como se gerencia pastas utilizando o Visual Studio Code?
