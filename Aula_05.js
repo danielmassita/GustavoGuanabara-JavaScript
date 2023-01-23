@@ -55,8 +55,15 @@ var s2 = 'Curso em Vídeo' (apóstrofo)
 var s3 = `Guanabara` (crase)
 */
 
-
-
+/*
+REGRAS DE IDENTIFICADORES
+- podem começar com letras, $ ou _
+- não podem começar com números
+- possível usar letras ou números
+- possível usar acentos e símbolos
+- não podem conter espaços (camelcase, snakecase)
+- não podem ser palavras reservadas pro JS (var, function, etc.)
+*/
 
 /* TRANSCRIÇÃO
 0:00
