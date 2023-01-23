@@ -65,6 +65,32 @@ REGRAS DE IDENTIFICADORES
 - não podem ser palavras reservadas pro JS (var, function, etc.)
 */
 
+/*
+ABRIR O NODE.JS
+> 'oi'
+< 'oi'
+> 3+2
+< 5
+> var nome = "Gustavo"
+< undefined
+> nome
+< "Gustavo"
+> 'nome'
+< 'nome'
+> nome = 'Paulo'
+< 'Paulo'
+> nome
+< 'Paulo'
+> .exit (pra fechar)
+
+ABRIR O VSCODE > Terminal > New > node
+
+
+
+
+
+*/
+
 /* TRANSCRIÇÃO
 0:00
 Como de costume, antes da aula, eu vou te fazer quatro perguntas: Em primeiro lugar, você já aprendeu como se gerencia pastas utilizando o Visual Studio Code?
