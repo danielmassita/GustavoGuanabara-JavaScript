@@ -83,10 +83,33 @@ ABRIR O NODE.JS
 < 'Paulo'
 > .exit (pra fechar)
 
-ABRIR O VSCODE > Terminal > New > node
+ABRIR O VSCODE > Terminal > New > digitar: node (ou Ctrl+Shift+')
+> var idade = 18
+< undefined
+> idade
+< 18
+> var salário = 1550.35
+< undefined
+> var sexo = "M"
+< undefined
+> salário
+< 1550.35
+> sexo
+< "M"
 
+SAIR TERMINAR 
+.exit (sair do node)
+exit (sair do terminal)
+clicar no X de CADA TERMINAL INDIVIDUAL NÃO VAI FECHAR, só segundo plano. USAR EXIT!
 
-
+Terminal > Node
+> var n1 = 8
+undefined
+> var n2 = 5
+undefined
+> n1 + n2
+13
+> Ctrl+L (limpar o terminal)
 
 
 */
