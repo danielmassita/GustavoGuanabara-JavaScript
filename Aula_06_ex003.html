@@ -43,7 +43,50 @@
         Number.parseInt
         Number.parseFloat
 
-        
+        /*
+        ABRIR O NODE.JS
+            > var s = 'JavaScript'
+            undefined
+            > s
+            'JavaScript'
+            > 'Eu estou estudando s'
+            'Eu estou estudando s'
+            > 'Eu estou estudando ' + s
+            'Eu estou estudando JavaScript'
+
+            > nome = 'Gustavo'
+            'Gustavo'
+            > idade = 41
+            41
+            > nota = 5.5
+            5.5
+            > nome
+            'Gustavo'
+            > idade
+            41
+            > nota
+            5.5
+            > 'O aluno '+nome+', com '+idade+' anos, tirou a nota '+nota+'.' / BIZARRO
+            'O aluno Gustavo, com 41 anos, tirou a nota 5.5.'
+
+            TEMPLATE STRING (PLACE HOLDER) `${}`
+            `Eu estou aprendendo ${s}` // 'Eu estou aprendendo JavaScript'
+
+            > 'O aluno '+nome+', com '+idade+' anos, tirou a nota '+nota+'.'
+            'O aluno Gustavo, com 41 anos, tirou a nota 5.5.'
+            > `O aluno ${nome}, com idade de ${idade} anos, tirou a nota ${nota}.`
+            'O aluno Gustavo, com idade de 41 anos, tirou a nota 5.5.'            
+            */
+
+        window.alert(`A soma entre ${n1} e ${n2} é de: ${s}.`)
+        // Template String utilizando Place Holder (uma boa prática de sintaxe)
+
+        var S = 'JavaScript'
+        'Eu estou estudando S.'
+        `Eu estou estudando ${S}.`
+        S.length // quantos caracteres tem 'javascript'
+        S.toUpperCase() // tudo pra letras maiúsculas
+        S.toLowerCase() // tudo pra letras minúsculas  
     </script>
 </body>
 </html>
