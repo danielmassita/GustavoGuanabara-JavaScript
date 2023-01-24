@@ -46,16 +46,17 @@ EX 003 - TEMPLATE STRINGS e PLACE HOLDER
 
         No exemplo, se eu usar Number.parseInt, mas digitar no prompt um número real, o recurso .parseInt vai arredondar pra baixo o número inteiro, e desconsiderar a fração...
 
-        CONVERSÃO NUMBER > STRING
-        String(n)
-        n.toString()
-        
+        CONVERSÃO NUMBER > STRING */
 
-        Number(n)
-        Number.parseInt
-        Number.parseFloat
+String(n)
+n.toString()
 
-        
+
+Number(n)
+Number.parseInt(n)
+Number.parseFloat(n)
+
+/*        
         ABRIR O NODE.JS
             > var s = 'JavaScript'
             undefined
@@ -91,14 +92,16 @@ EX 003 - TEMPLATE STRINGS e PLACE HOLDER
             
 
         window.alert(`A soma entre ${n1} e ${n2} é de: ${s}.`)
-        // Template String utilizando Place Holder (uma boa prática de sintaxe)
+        // Template String utilizando Place Holder (uma boa prática de sintaxe)*/
 
-        var S = 'JavaScript'
-        'Eu estou estudando S.'
-        `Eu estou estudando ${S}.`
-        S.length // quantos caracteres tem 'javascript'
-        S.toUpperCase() // tudo pra letras maiúsculas
-        S.toLowerCase() // tudo pra letras minúsculas  
+var S = 'JavaScript'
+'Eu estou estudando S.'
+`Eu estou estudando ${S}.`
+S.length // quantos caracteres tem 'javascript'
+S.toUpperCase() // tudo pra letras maiúsculas
+S.toLowerCase() // tudo pra letras minúsculas  
+        
+/*
     </script>
 
 */
