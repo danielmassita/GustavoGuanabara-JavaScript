@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro script</title>
+    <style>
+        body {
+            background-color: rgb(67, 67, 230);
+            color: #FFFFFF;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow; /* Isso é um comentário em CSS */
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- Isso é um comentário em HTML -->
+    <p>Já me livrei da maldição...</p> 
+    Olá, mundo! Mas aqui é só um texto, sem ser título ou parágrafo ou nada especial...
+
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número (n1): '));
+        var n2 = Number.parseInt(window.prompt('Digite outro número (n2): '));
+        var s = n1 + n2;
+        window.alert('A soma dos valores é: ' + s +'.') // resultado 42 ERRADO, pois concatenou duas strings (tipo string é retorno do prompt...) - para ser adição, eram preciso que os dois TIPOS fossem NUMBER. O PROMPT possui como característica o valor em string. 
+
+        /*CONVERSÃO STRING > NUMBER
+        Number.parseInt(n)
+        Number.parseFloat(n)
+        */
+    </script>
+</body>
+</html>
