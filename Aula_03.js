@@ -570,4 +570,5 @@ Um grande abraço, boas práticas, instale todas as ferramentas aí no seu dispo
 e escrever nossos primeiros programas em JavaScript. Um grande abraço e até a próxima!
 32:34
 Legenda: Tainá Bandeira
+FIM
 */
