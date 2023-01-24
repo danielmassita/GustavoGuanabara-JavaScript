@@ -22,15 +22,28 @@
     Olá, mundo! Mas aqui é só um texto, sem ser título ou parágrafo ou nada especial...
 
     <script>
-        var n1 = Number.parseInt(window.prompt('Digite um número (n1): '));
-        var n2 = Number.parseInt(window.prompt('Digite outro número (n2): '));
+        var n1 = Number.parseFloat(window.prompt('Digite um número (n1): '));
+        var n2 = Number.parseFloat(window.prompt('Digite outro número (n2): '));
         var s = n1 + n2;
-        window.alert('A soma dos valores é: ' + s +'.') // resultado 42 ERRADO, pois concatenou duas strings (tipo string é retorno do prompt...) - para ser adição, eram preciso que os dois TIPOS fossem NUMBER. O PROMPT possui como característica o valor em string. 
+        window.alert('A soma dos valores é: ' + String(s) +'.') // resultado 42 ERRADO, pois concatenou duas strings (tipo string é retorno do prompt...) - para ser adição, eram preciso que os dois TIPOS fossem NUMBER. O PROMPT possui como característica o valor em string. 
 
         /*CONVERSÃO STRING > NUMBER
         Number.parseInt(n)
         Number.parseFloat(n)
+        Number(n)
+
+        No exemplo, se eu usar Number.parseInt, mas digitar no prompt um número real, o recurso .parseInt vai arredondar pra baixo o número inteiro, e desconsiderar a fração...
+
+        CONVERSÃO NUMBER > STRING
+        String(n)
+        n.toString()
         */
+
+        Number(n)
+        Number.parseInt
+        Number.parseFloat
+
+        
     </script>
 </body>
 </html>
