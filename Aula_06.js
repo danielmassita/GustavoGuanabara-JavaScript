@@ -8,3 +8,27 @@ PERGUNTAS AULA ANTERIOR
 - Quais são os tipos primitivos do JS? String, Number, Boolean.
 - O que significa colocar o valor null dentro de uma variável? Atribuir um espaço "vacio" pra variável, que curiosamente receberá o typeof de 'object'...
 */
+
+/*
+`${MANIPULAÇÃO DE DADOS}`
+- var, let, const (no futuro...)
+
+DATA TYPES
+- Number
+    NaN
+    Infinity
+- String
+- Boolean
+- Null
+- Undefined
+- Object
+    Array
+- Function
+
+Principais: String, Number, Boolean
+
+// Guardando dados? Perdemos os dados do Ex 001 da Aula 04. Os dados foram pra onde...?
+
+ABRIR O VISUAL STUDIO CODE
+
+*/
