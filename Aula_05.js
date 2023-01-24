@@ -695,5 +695,5 @@ o patrocínio total do Google, e gostaria de agradecer também pela sua audiênc
 todas as aulas que já estão disponíveis no nosso canal. Um grande abraço, bons estudos e até a próxima!
 31:22
 Legendas: Rayssa Victoria
-FIM
+FIM!
 */
