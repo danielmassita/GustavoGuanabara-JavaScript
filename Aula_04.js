@@ -749,4 +749,5 @@ Eu me despeço por aqui, não se esqueça de praticar antes de passar para a pr�
 variáveis. Um grande abraço e até a próxima!
 23:56
 Legendas: Lucas Fedorowicz
+FIM
 */
