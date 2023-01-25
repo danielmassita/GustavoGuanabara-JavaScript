@@ -26,8 +26,9 @@ PERGUNTAS AULA ANTERIOR
     - lógicos
     - ternário
     - typeof
+*/
 
-OPERADORES ARITMÉTICOS (binários) 
+/* OPERADORES ARITMÉTICOS (binários) 
     5 + 2 = 7
     5 - 2 = 3
     5 * 2 = 10
@@ -62,16 +63,17 @@ Uncaught SyntaxError: Invalid regular expression: missing /
 4
 */
 
-/*
-ORDEM DE PRECEDÊNCIA DE TODAS AS LINGUAGENS
+/* ORDEM DE PRECEDÊNCIA DE TODAS AS LINGUAGENS
+(de cima pra baixo, prioridades)
+
     ( )     parênteses
     **      exponenciação
-    * / %   multiplicação, divisão e divisão inteira
+    * / %   multiplicação, divisão e divisão inteira (esq. -> dir.)
     + -     somas, subtrações
+
 */
 
-/*
-ATRIBUIÇÃO SIMPLES (Operador de Atribuição)
+/* ATRIBUIÇÃO SIMPLES (Operador de Atribuição)
 var a = 5 + 3           // 8
 var b = a % 5           // 3
 var c = 5 * b ** 2      // 45
@@ -104,5 +106,59 @@ undefined
 2
 > f
 3
+
+*/
+
+/* AUTO-ATRIBUIÇÕES
+var n = 3           // 3
+n = n + 4           // 7
+n = n - 5           // 2
+n = n * 4           // 8
+n = n / 2           // 4
+n = n ** 2          // 16
+n = n % 5           // 1
+
+A variável começou como sendo "3", mas ao longo da cadeia de atribuições (novos valores), teve seu valor atualizado conforme cada nova linha.
+
+var n = 3
+n += 4
+n -= 5
+n *= 4
+n /= 2
+n **= 2
+n %= 5
+
+Essa sintaxe funciona SOMENTE quando se trata exatamente da mesma variável, pra evitar repetir ela mesma.
+
+*/ 
+
+/* 
+NODE.JS
+> var num = 8
+undefined
+> num += 2
+10
+> num %= 2
+0
+> num = 3
+3
+> num **= 2
+9
+*/
+
+/* INCREMENTO (pré-incremento, pós-incremento)
+var x = 5
+x = x + 1       // 6
+x = x - 1       // 5
+
+x += 1
+x -= 1
+
+x++ (pós-incremento)
+--x (pré-incremento)
+
+*/
+
+/* TRANSCRIÇÃO 
 
 */
