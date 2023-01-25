@@ -40,4 +40,69 @@ CUIDADO! Precedência de operadores.
 ...
 errado 4
 correto 6.5
+
+Node.JS
+> 5 + 2     
+7           
+> 9 % 2
+1
+> 9 / 2
+4.5
+> 5 + 3 / 2 // ordem de precedência, primeiro divide depois soma, apesar do erro aritmético, não existe erro sintático
+6.5
+> 5 + / 2 // aqui no exemplo tem um erro sintático
+5 + / 2
+    ^
+
+Uncaught SyntaxError: Invalid regular expression: missing /
+
+> 5 + 3 / 2
+6.5
+> (5 + 3) / 2
+4
+*/
+
+/*
+ORDEM DE PRECEDÊNCIA DE TODAS AS LINGUAGENS
+    ( )     parênteses
+    **      exponenciação
+    * / %   multiplicação, divisão e divisão inteira
+    + -     somas, subtrações
+*/
+
+/*
+ATRIBUIÇÃO SIMPLES (Operador de Atribuição)
+var a = 5 + 3           // 8
+var b = a % 5           // 3
+var c = 5 * b ** 2      // 45
+var d = 10 - a / 2      // 6
+var e = 6 * 2 / d       // 2
+var f = b % e + 4 / e   // 3
+
+NODE.JS
+> var a = 5 + 3
+undefined
+> var b = a % 5
+undefined
+> var c = 5 * b ** 2
+undefined
+> var d = 10 - a / 2
+undefined
+> var e = 6 * 2 / d
+undefined
+> var f = b % e + 4 / e
+undefined
+> a
+8
+> b
+3
+> c
+45
+> d
+6
+> e
+2
+> f
+3
+
 */
