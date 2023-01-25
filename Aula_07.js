@@ -14,6 +14,5 @@ PERGUNTAS AULA ANTERIOR
 - Como guardar o valor digitado no prompt dentro de uma variável? var nome = window.prompt("Qual o seu nome? ")
 - Como usar um número do prompt em cálculos? Transformando a resposta do prompt (de string) em um número, usando var n1 = Number.parseFloat(window.prompt('Digite um número (n1): '))
 - Como transformar um texto todo em maiúsculas? var s = 'JavaScript' e usar a variável e a classe s.toUpperCase() 
-- Como mostrar número com formato monetário correto? var n1 = 1545.50 e então usar uma classe para n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-*/
+- Como mostrar número com formato monetário correto? var n1 = 1545.50 e então usar uma classe para n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});*/
 
