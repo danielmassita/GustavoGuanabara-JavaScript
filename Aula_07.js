@@ -14,5 +14,30 @@ PERGUNTAS AULA ANTERIOR
 - Como guardar o valor digitado no prompt dentro de uma variável? var nome = window.prompt("Qual o seu nome? ")
 - Como usar um número do prompt em cálculos? Transformando a resposta do prompt (de string) em um número, usando var n1 = Number.parseFloat(window.prompt('Digite um número (n1): '))
 - Como transformar um texto todo em maiúsculas? var s = 'JavaScript' e usar a variável e a classe s.toUpperCase() 
-- Como mostrar número com formato monetário correto? var n1 = 1545.50 e então usar uma classe para n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});*/
+- Como mostrar número com formato monetário correto? var n1 = 1545.50 e então usar uma classe para n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+*/
 
+/* 
+`${Operadores do JS}`
+- Famílias de Operadores
+    - aritméticos
+    - atribuição
+    - relacionais
+    - lógicos
+    - ternário
+    - typeof
+
+OPERADORES ARITMÉTICOS (binários) 
+    5 + 2 = 7
+    5 - 2 = 3
+    5 * 2 = 10
+    5 / 2 = 2.5 (divisão real)
+    5 % 2 = 1 (divisão inteira, usa o "resto" da divisão inteira)
+    5 ** 2 = 25 (exponenciação)
+
+CUIDADO! Precedência de operadores. 
+5 + 3 / 2
+...
+errado 4
+correto 6.5
+*/
