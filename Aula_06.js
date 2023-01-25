@@ -33,12 +33,18 @@ ABRIR O VISUAL STUDIO CODE
 
 EX 003 - TEMPLATE STRINGS e PLACE HOLDER
 
-<script>
-        var n1 = Number.parseFloat(window.prompt('Digite um número (n1): '));
-        var n2 = Number.parseFloat(window.prompt('Digite outro número (n2): '));
+<script>*/
+
+
+        var n1 = window.prompt('Digite um número (n1): ');
+        var n2 = window.prompt('Digite outro número (n2): ');
         var s = n1 + n2;
         window.alert('A soma dos valores é: ' + String(s) +'.') // resultado 42 ERRADO, pois concatenou duas strings (tipo string é retorno do prompt...) - para ser adição, eram preciso que os dois TIPOS fossem NUMBER. O PROMPT possui como característica o valor em string. 
 
+        var n1 = Number.parseFloat(window.prompt('Digite um número (n1): '));
+        var n2 = Number.parseFloat(window.prompt('Digite outro número (n2): '));
+        window.alert('A soma dos valores é: ' + String(s) +'.') // resultado 42 ERRADO, sendo inicialmente string e depois number, poderá então ser somado. 
+        
         /*CONVERSÃO STRING > NUMBER
         Number.parseInt(n)
         Number.parseFloat(n)
