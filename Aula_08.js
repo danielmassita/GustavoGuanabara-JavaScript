@@ -66,3 +66,60 @@ curso == 'JavaScript'   // o curso é JavaScript?
 n1 != n2                // o primeiro número é diferente do segundo?
 */
 
+/* OPERADORES RELACIONAIS (IDENTIDADE)
+5 == 5      // true
+5 == '5'    // true (a igualdade não testa o tipo)
+5 === '5'   // false (OPERADORE DE IGUALDADE RESTRITA) do mesmo valor E tipo.
+5 === 5     // true 
+
+NODE.JS
+
+> 5 == 5
+true
+> 5 == '5'
+true
+> var x = 5
+undefined
+> var y = '5'
+undefined
+> typeof x
+'number'
+> typeof y
+'string'
+> x == y
+true
+> x === y
+false
+> x != y
+false
+> x !== y
+true
+*/
+
+/* OPERADORES LÓGICOS ()
+!       negação
+&&      conjunção (e)
+||      disjunções (ou)
+
+Eu quero duas caneta azul OU vermelho
+azul || vermelha 
+Eu quero duas canetas azul E vermelha
+azul && vermelha
+
+Operador Unário
+!   true    (algo não verdadeiro é FALSE)
+    false   (algo não falso é VERDADEIRO)
+
+Operador Binário - %% CONJUNÇÃO
+true    &&      true    -> TRUE 
+true    &&      false   -> FALSE
+false   &&      true    -> FALSE
+false   &&      false   -> FALSE
+
+Operador Binário - || DISJUNÇÃO
+true    ||      true    -> TRUE 
+true    ||      false   -> TRUE
+false   ||      true    -> TRUE
+false   ||      false   -> FALSE
+
+*/
