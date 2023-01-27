@@ -184,6 +184,44 @@ salário > 1500 && sexo != 'M'       // o salário é acima de 1500 e não é ho
     &&   (e)
     ||   (ou)
 
+4º Ternário 
 */
 
-/*
+/* OPERADOR TERNÁRIO ? : Junta 3 operandos...
+
+TESTE   ?   TRUE    :   FALSE
+
+Qual o teste lógico, veraddeiro o falso?
+
+média >= 7.0 ? "Aprovado" : "Reprovado"
+
+
+NODE.JS
+
+> var média = 5.5
+undefined
+> média > 7 ? "Aprovado" : "Reprovado"
+'Reprovado'
+>  média += 3
+8.5
+> média > 7 ? "Aprovado" : "Reprovado"
+'Aprovado'
+
+> var x = 8
+undefined
+> var res = x % 2 == 0 ? 5 : 9
+undefined
+> res
+5
+> x
+8
+
+À variável X é atribuído 8. À variavel res é atribuída um valor, dependendo do teste aritmético (x % 2 == 0, true), então pra true o res será igual a cinco, e não nove. 
+
+> var idade = 19
+undefined
+> var r = idade >= 18 ? "MAIOR" : "MENOR"
+undefined
+> r
+'MAIOR'
+*/
