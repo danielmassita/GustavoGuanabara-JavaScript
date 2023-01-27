@@ -122,4 +122,68 @@ true    ||      false   -> TRUE
 false   ||      true    -> TRUE
 false   ||      false   -> FALSE
 
+NODE.JS
+
+> var a = 5
+undefined
+> var b = 8
+undefined
+> true && false
+false
+> true && true
+true
+> false || false
+false
+> true || false
+true
+> false || true
+true
+> true || true
+true
+> a > b && b % 2 == 0
+false
+> a <= b || b % 2 == 2
+true
+
+Explicando...
+{ (a <= b) true || (b % 2 == 2) false }
+// {  true      ||      false}
+// true
+
+Primeiro op. aritméticos, depois relacionais, depois lógicos.
+
+Ordem de Precedência Operadores
+1º Aritméticos
+2º Relacionais
+3º Lógicos
+
+Ordem de Precedência Lógica
+1º NÃO
+2º E
+3º OU
+
+// Exemplos
+
+idade >= 15 && idade <= 17          // a idade está entre 15 e 17 inclusive?
+estado == 'RJ' || estado == 'SP'    // o estado é RJ ou SP?
+salário > 1500 && sexo != 'M'       // o salário é acima de 1500 e não é homem?
 */
+
+/* ORDEM DE PRECEDÊNCIA FINAL
+
+1º Aritméticos
+    ( )     parênteses
+    **      exponenciação
+    * / %   multiplicação, divisão e divisão inteira (esq. -> dir.)
+    + -     somas, subtrações
+
+2º Relacionais (sem ordem de precedência, esquerda pra direita)
+
+3º Lógicos
+    !    (não)
+    &&   (e)
+    ||   (ou)
+
+*/
+
+/*
