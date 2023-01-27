@@ -7,3 +7,21 @@ Pois, para responder a essas e muitas outras perguntas, assista essa aula do Cur
 
 Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor Gustavo Guanabara para o canal CursoemVideo. */
 
+/* PERGUNTAS AULA ANTERIOR
+- Pra que serve o operador % em JS? Seria pra calcular porcentagem? Não, trata-se da divisão inteira com resto, sendo armazenado o resto da divisão, por exemplo 5 % 2 = 1, pois cinco dividido por dois dá dois e resta (1). 
+- 6 + 4 / 2 é igual a cinco ou oito? Pela ordem de precessão, será 6 + (4 / 2) = 8. 
+- Se uma variável n está valendo 10 e executamos um n+= 5, qual será seu novo valor? n = 10, n += 5, n = 15.
+- Pra que serve ++ e -- ao lado de uma variável? Trata-se do incremento de 1 inteiro, por exemplo x = 2, x++ então x = 3. Pode ser x++ ou ++X.
+*/
+
+/* AULA 08 - OPERADORES PARTE 2
+`${Operadores de JS}` - Parte 2
+
+- Operadores do JavaScript
+    - aritmético
+    - atribuição
+    - relacionais
+    - lógicos
+    - ternário
+
+*/
