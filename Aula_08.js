@@ -38,5 +38,31 @@ OPERADORES RELACIONAIS (resultado SEMPRE BOOLEAN)
     9 <= 7  // false
     5 == 5  // true
     4 != 4  // false
-
 */
+
+/* NODE.JS
+> 5 > 2
+true
+> 8 < 4
+false
+> var a = 8
+undefined
+> var b = 15
+undefined
+> a > b
+false
+> a <= b - 10
+false
+> a == b
+false
+> a != b
+true
+
+// Exemplos
+
+preço >= 200.50         // o preço é maior ou igual a 200.50?
+idade < 18              // a idade é menor do que 18?
+curso == 'JavaScript'   // o curso é JavaScript?
+n1 != n2                // o primeiro número é diferente do segundo?
+*/
+
