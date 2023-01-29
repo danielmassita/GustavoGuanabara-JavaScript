@@ -766,4 +766,5 @@ porque tudo tá te levando a conhecer um pouco mais de JavaScript.
 Um grande abraço, bons treinos e até a próxima!
 24:08
 Legendas: Samara Affonso
+FIM
 */
