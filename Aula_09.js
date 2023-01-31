@@ -13,3 +13,10 @@ Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor 
 - Sabe usar OPERADOR pra colocar um valor ou outro, dentro de uma mesma variável? Sim. OPERADOR TERNÁRIO é composto por TESTE ? TRUE : FALSE, por exemplo: (idade >= 18) : ("Autorizado.") : ("Desautorizado.") 
 */
 
+/* `${Entrendendo o DOM}`
+Na Aula01 já fizemos o uso do DOM. Mas sem entrar em detalhes. Instalar alguns programas no VSCode e Chrome. 
+- Live Server (antigo "Watch In Chrome");
+- 
+
+
+*/
