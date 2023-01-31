@@ -35,17 +35,32 @@
             // Quando eu clicar, o "interaja" vai mudar o conteúdo dele... 
 
             // var a = window.document.getElementById('area');
-            a.innerText = 'Clicou!'
+            a.innerText = 'Clicou!';
+            a.style.background = 'red';
         }
 
         function entrar() {
             // var a = window.document... Não vale a pena trabalhar assim, pois teria que fazer VAR A = window... Aqui de dentro, eu não consigo acessar o A da função anterior (problema de ESCOPO e USO DE MEMÓRIA) então vou colocar o var a = ... pra fora, que vai funcionar pra qualquer coisa nos escopos seguintes...
-            a.innerText = 'Entrou!'
+            a.innerText = 'Entrou!';
         }
 
         function sair() {
-            a.innerText = 'Saiu!'
+            a.innerText = 'Saiu!';
+            a.style.background = 'green';
         }
+
+        // A interatividade com a DIV eu posso ter com QUALQUER elemento. Além de disparar pelo HTML, posso disparar os eventos (listeners) dentro do próprio JavaScript.
+/*
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+*/
+        // Agora no caso, eu crio um gatilho dentro do JavaScript, que fica observando se existe uma ocorrência de um evento (click, mouseenter, mouseout), dentro do escopo da div na variável a, que fica observando. Assim o JS fica prestando atenção e quando acontecer o evento, ativa a ação (clicar, entrar, sair - mas agora sem os ( ) dos parâmetros)...
+
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
 
     </script>
 </body>
