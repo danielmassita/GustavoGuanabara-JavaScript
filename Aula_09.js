@@ -15,8 +15,10 @@ Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor 
 
 /* `${Entrendendo o DOM}`
 Na Aula01 já fizemos o uso do DOM. Mas sem entrar em detalhes. Instalar alguns programas no VSCode e Chrome. 
+
 - Live Server (antigo "Watch In Chrome");
-- 
+- Ctrl+Shift+P (dentro do arquivo do VSCode e no prompt) e digitar > Live Server e escolher entre LIGAR/DESLIGAR, podendo usar Alt+L Alt+O pra usar e Alt+L Alt+C pra desativar.
+
 
 
 */
