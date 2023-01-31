@@ -42,6 +42,23 @@ by Selector     - querySelector("");
                 - querySelectorAll("");
 */
 
-/* 
+/* `${Eventos DOM}`
+
+- Os conceitos do DOM vão mostrar coisas legais e formar uma base sólida, com fundamento. Editor, navegador, anotações! 
+
+- O que é DOM? Document, Object Model, facilitador dentro do seu navegador, dentro do HTML5, pra dar acesso aos elementos diretamente para o JS. Sem o DOM, teríamos dificuldade pra acessar os elementos da nossa página. O primeiro passo prático foi a montagem da ÁROVRE DOM. Precisa entender a Árovre DOM, e não decorar, cada página é individual. 
+
+- DICA (se ficou alguma dificuldade na Aula 9, volta e só depois continua a Aula 10)! 
+
+- Além de montar a árvore, usamos CINCO MÉTODOS pra ACESSAR ELEMENTOS dentro do JavaScript, usando o DOM.
+    TagName
+    ID
+    Name
+    ClassName
+    querySelector (faz a seleção através de elementos CSS)
+
+    
+- Nessa aula, vamos focar em EVENTOS. Por exemplo, uma DIV qualquer... Vamos pro editor:
+
 
 */
