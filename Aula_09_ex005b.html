@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background: #5166f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Diferença entre innerText e InnerHTML:</h1>
+    <p class="teste_1"></p>
+    <p id="teste_2"></p>
+    <script>
+        var variavel_1 = document.querySelector('.teste_1')
+        variavel_1.innerText = "Teste do <strong>innerText</strong>"
+
+        var variavel_2 = document.querySelector('#teste_2')
+        variavel_2.innerHTML = "Teste do <strong>innerHTML</strong>"
+    </script>
+</body>
+
+</html>
