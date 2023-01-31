@@ -40,5 +40,8 @@ by Name         - getElementsByName("")
 by Class        - getElementsByClassName("")
 by Selector     - querySelector("");        
                 - querySelectorAll("");
+*/
+
+/* 
 
 */

@@ -40,11 +40,11 @@
         var p2 = document.getElementsByTagName('p')[1] 
         var d = document.getElementById('msg') // Estou selecionando a DIV que tem um ID='msg' 
 
-        window.document.write('Está escrito assim: ' + p2.innerText) // "Aqui vai o resultado..." Aqui é como se fosse o tratamento que vou dar, para a variável do elemento que eu selecionei, no caso o p2. Porém, não puxou o negrito do parágrafo, pois o método .innerText copia o valor, mas não o estilo
+        window.document.write('Está escrito assim: ' + p1.innerText) // "Aqui vai o resultado..." Aqui é como se fosse o tratamento que vou dar, para a variável do elemento que eu selecionei, no caso o p2. Porém, não puxou o negrito do parágrafo, pois o método .innerText copia o valor, mas não o estilo
         window.document.write('Está escrito assim: ' + p2.innerHTML) // se eu usar um window.alert(), ele vai puxar o .innerText sem as filhas ou .innerHTML pega inclusive as tags filhas com o negrito. 
-        
-        p1.style.color = 'blue'
-        corpo.style.background = 'gray'
+                
+        p1.style.color = 'blue';
+        corpo.style.background = 'gray';
 
         /* As DIVs são uma classe bem comum na estrutura do HTML, então eu preciso usar uma ID pra identificar, no caso 'msg'. Assim, posso selecionar com o comando getElementById('msg'). Ou seja, dentro do html, a div original continha um valor 'Clique em mim...' mas que eu criei uma variável selecionando o ELEMENTO, selecionei via JS e MODIFIQUEI via JS o conteúdo/teor desse dado, no caso, alterando com o método a partir da variável criada. Por exemplo, p2.document.write('Uma nova mensagem assim: ' + p2.innerText) pra copiar o texto contido nessa variável, mas no caso sem o negrito, poir o innerText != innerHTML, mais completo com elementos filhos (strong)... */
 
