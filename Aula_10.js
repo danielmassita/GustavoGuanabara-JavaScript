@@ -57,8 +57,80 @@ by Selector     - querySelector("");
     ClassName
     querySelector (faz a seleção através de elementos CSS)
 
-    
+
 - Nessa aula, vamos focar em EVENTOS. Por exemplo, uma DIV qualquer... Vamos pro editor:
+*/
+
+/* Abrir novo arquivo HTML e codar...
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+
+</body>
+</html>
 
 
 */
+
+/* EVENTOS DOM 
+
+- É tudo aquilo que pode acontecer com essa DIV (ou qualquer elemento...). O que pode acontecer com essa DIV? O mais comum, será o evento de mouse... São coisas que eu posso fazer, que vai DISPARAR um evento, que vai ser um gatilho pra uma FUNÇÃO.
+
+Mouse dentro da DIV (seis métodos disparados com simples movimento de mouse)
+
+- mouseenter (dispara quando entrar na área da div)
+- mousemove (dispara várias vezes enquanto mover dentro div)
+- mousedown (dispara enquanto clicar, e segurar, o botão do mouse e a tecla está apertada/down)
+- mouseup (dispara um quando SOLTAR o click, o botão do mouse e a tecla foi liberada/up)
+- click (evento dispara quando existe um "click" completo)
+- mouseout (dispara quando sair da área da div)
+
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+
+FUNÇÃO (pra disparar um evento...)
+- Funcionalidade é um conjunto de códigos/linhas, que vão ser executadas só quando o evento ocorrer... Por exemplo, um BLOCO de 10 linhas. Só serão executadas quando um evento ocorrer.
+
+[ bloco ]
+
+{
+    bloco
+}
+
+function {
+    bloco
+}
+
+Existe a function (anônima), e vamos abrir e fechar chaves com o código/bloco dentro. Para o MÉTODO FUNCIONAR precisamos dar um nome pra função, por exemplo, AÇÕES geralmente de evento...
+
+function ação(param){
+    bloco
+}
+
+Vamos abrir o VS Code...*/
