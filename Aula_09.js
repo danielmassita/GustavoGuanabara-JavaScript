@@ -7,3 +7,9 @@ Pois, para responder a essas e muitas outras perguntas, assista essa aula do Cur
 
 Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor Gustavo Guanabara para o canal CursoemVideo.*/
 
+/* PERGUNTAS DA AULA ANTERIOR
+- Qual a diferença entre =, ==, === escritos em JS? Um igual é atribuição var nome = 'Daniel'. Dois, igualdade do valor do dado, 5 == '5' (true), testa apenas o valor. Três, igualdade estricta 5 === '5' (false), testa também o tipo (typeof). 
+- Em uma operação com && e ||, quem eu resolvo primeiro? A ordem de precedência observa negação primeiro (!), depois CONJUNÇÃO (&&) (por ser mais estrita), por fim a disjunção (||) por ser mais ampla. O escopo é do menor pro maior, sendo possível "pegar" SE's anteriores que inviabilizariam "aceites" de SE's posteriores. 
+- Sabe usar OPERADOR pra colocar um valor ou outro, dentro de uma mesma variável? Sim. OPERADOR TERNÁRIO é composto por TESTE ? TRUE : FALSE, por exemplo: (idade >= 18) : ("Autorizado.") : ("Desautorizado.") 
+*/
+
