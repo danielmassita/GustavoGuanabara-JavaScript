@@ -19,11 +19,34 @@
     </style>
 
 </head>
+
 <body>
-    <div id="area">
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         Interaja...
     </div>
 
-    
+    <script>
+        var a = window.document.getElementById('area')
+
+        function clicar() {
+            // bla bla bla tudo que estiver aqui dentro só vai ser executado quando eu "chamar" o evento clicar( ). 
+
+            // Quando eu clicar, o "interaja" vai mudar o conteúdo dele... 
+
+            // var a = window.document.getElementById('area');
+            a.innerText = 'Clicou!'
+        }
+
+        function entrar() {
+            // var a = window.document... Não vale a pena trabalhar assim, pois teria que fazer VAR A = window... Aqui de dentro, eu não consigo acessar o A da função anterior (problema de ESCOPO e USO DE MEMÓRIA) então vou colocar o var a = ... pra fora, que vai funcionar pra qualquer coisa nos escopos seguintes...
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+        }
+
+    </script>
 </body>
 </html>
