@@ -169,3 +169,15 @@ Vamos abrir o VS Code...*/
 
 */
 
+/* DEV TOOLS ERRORS
+
+- Usando o JavaScript, podem ocorrer errors internos que o usuário não saberá.
+- Experimentar trocar o w do window.document... por um W maiúsculo, isso iria gerar um erro (TypeError)... 
+- Experimentar apagar o w do window.document... isso iria gerar um ReferenceError, not defined... 
+- Usar o DevTools (F12) pra inspecionar no CONSOLE os erros...
+
+MÃO NA MASSA - OUTRO EXEMPLO 
+
+
+
+*/
