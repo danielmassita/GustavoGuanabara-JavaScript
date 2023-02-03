@@ -61,3 +61,48 @@ Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor 
 </body>
 
 */
+
+/* `${Condições em JS}` - CONDIÇÕES Parte 1
+
+- MÓDULO D (Condições + Exercícios)
+        - Condições Simples (if)
+        - Condições Compostas (if, else)
+        - Condições Aninhadas (elseif, encadeando múltiplas condições)
+        - Condições Múltiplas (estrutura switchcase)
+        - Exercícios Propostas
+
+- SEQÜÊNCIAS NO JAVASCRIPT (até agora, só usamos códigos seqüênciais...)
+
+var n = 3
+n += 2
+window.alert(n)
+
+Não podemos mudar a ordem, executando um, ou outro, sem seguir o fluxo... É obrigatório seguir a ordem... Às vezes, o comando vai ter um fluxo com uma bifurcação, e não será mais uma linha vertical. Esse "desvio" se chama um DESVIO CONDICIONAL (fundamentos da programação). 
+
+"Losango" = IF
+"esquerda" = cria um bloco { } com IF e depois...
+"direita" = cria um bloco { } com ELSE e depois vai...
+
+    if (condição) {
+        true
+    } else {
+        false
+    }
+
+Aqui nessa aula veremos 2 tipos de condições (simples e composta)...
+
+CONDIÇÃO SIMPLES - Se a condição for falsa, nada em especial vai acontecer, o fluxo do programa continua rodando normalmente...
+
+if (condição) {
+    true
+}
+
+CONDIÇÂO COMPOSTA - se a condição for verdadeira, algo A acontece. Se a condição for falsa, algo B acontece... 
+
+if (condição) {
+    true
+} else {
+    false
+}
+
+*/

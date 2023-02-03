@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polícia Federal Imigração</title>
+</head>
+<body>
+    <h1>Sistema de Imigração</h1>
+    <p>Nome do seu país: <input type="text" name="nomeDoPais" id="nomeDoPais"></p>
+    <input type="button" value="Verificar!" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var txtPais = window.document.getElementById('nomeDoPais')
+            var res = window.document.querySelector('div#res')
+            var pais = String(txtPais.value).toLowerCase()
+            res.innerHTML = `<p>O seu país atual de residência é: ${pais.toLocaleUpperCase()}.</p>`
+
+            if (pais == 'brasil') {
+                console.log('Brasileiro!')
+                res.innerHTML += `<p>Você será considerado, no cadastro da DPF, <strong>brasileiro</strong>.</p>`
+            } else {
+                console.log('Estrangeiro!')
+                res.innerHTML += `<p>Você será considerado, no cadastro da DPF, <strong>estrangeiro</strong>.</p>`
+            }
+        }
+            
+    </script>
+</body>
+</html>
