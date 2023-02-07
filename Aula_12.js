@@ -34,6 +34,20 @@ if (condição 2 == true) {
 
 /* `${`Condições em JS} - CONDIÇÕES Parte 2`
 
+- Praticar SEMPRE! 
+- Revisando: Condição Simples + Condição Composta. CONDIÇÃO SIMPLES (eu tenho um IF e se a condição for TRUE, executa bloco códigos). Se for a CONDIÇÃO COMPOSTA (eu tenho um IF e se a condição for TRUE, executa o bloco de códigos, ELSE e a condição for FALSE executa outro bloco de código). 
+
+CONDIÇÃO SIMPLES
+    if (condição) {
+        [   true    ]
+    }
+
+CONDIÇÃO COMPOSTA
+    if (condição) {
+        [   true    ]
+    } else {
+        [   false   ]
+    }
 
 
 */
