@@ -65,4 +65,57 @@ CONDIÇÃO COMPOSTA
         }
     }
 
+
+- CONDIÇÕES MÚLTIPLAS (SWITCH-CASE-BREAK) 
+
+- A condição múltipla serve pra condições múltiplas, principalmente para VALORES FIXOS. Ela não ajuda com INTERVALOS DE VALORES (bom dia, tarde, noite), mas pra eventos PONTUAIS e VALORES FIXOS é ótima (). Ao invés de valores BOOLEANOS, trabalhaos com conidionais de valores FIXOS. 
+
+EXPRESSÃO
+    teste1
+    teste2
+    teste3
+    teste4
+VOLTA
+
+ILUSTRAÇÃO
+
+    [   EXPRESSÃO   ]
+/       |       |       \
+A       B       C       D
+\       |       |       /
+    [   VOLTA FLUXO ]
+
+- É muito útil para situações pontuais e específicas.
+
+
+switch (expressão) {
+    case valor 1:
+        [       ]
+    case valor 2:
+        [       ]
+    case valor 3:
+        [       ]
+    default:
+        [       ]
+}
+
+- Dentro da estrutura Switch, proveniente da Linguagem C, dentro de cada bloco de código, é OBRIGATÓRIO usar um 'BREAK', na última é opcional, mas vamos usar sempre.
+
+switch (expressão) {
+    case valor 1:
+        [       ]
+        break
+    case valor 2:
+        [       ]
+        break
+    case valor 3:
+        [       ]
+        break
+    default:
+        [       ]
+        break
+}
+
+A expressão vai testar a condição, digamos pra valor 2, vai executar o bloco do valor 2, vai executar o BREAK e vai sair do SWITCH, continuando ao final do código.
+
 */
