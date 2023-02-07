@@ -49,5 +49,20 @@ CONDIÇÃO COMPOSTA
         [   false   ]
     }
 
+- Quando a condição Simples/Composta fica muito confusa, podemos usar outras ferramentas... 
+
+- CONDIÇÕES ANINHADAS (nest)
+
+- Vamos usar uma CONDIÇÃO COMPOSTA e colocar outras condições internamente com vários níveis... 
+
+    if (condição) {
+        [bloco1]
+    } else {
+        if (condição2) {
+            [bloco2]        // bloco2 só executa se a cond1 for falsa!
+        } else {
+            [bloco3]        // se cond1 && cond2 == false, exec. bloc3
+        }
+    }
 
 */
