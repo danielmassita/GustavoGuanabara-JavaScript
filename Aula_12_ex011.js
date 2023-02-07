@@ -34,6 +34,20 @@ if (idade < 16) {
     console.log('Não vota.');
 } else if (idade < 18) {
     console.log('Voto opcional. ')
+} else { // podemos suprimir o idade >= 18, é implícito
+    console.log('Voto obrigatório.')
 }
 
+// E no Brasil, quem possui mais de 65 anos, o voto é opcional. 
+
+var idade = 65;
+console.log(`Você tem ${idade} anos.`)
+
+if (idade < 16) {
+    console.log('Não vota.');
+} else if (idade < 18 || idade >= 65) {
+    console.log('Voto opcional. ')
+} else { // podemos suprimir o idade >= 18, é implícito
+    console.log('Voto obrigatório.')
+}
 
