@@ -40,5 +40,3 @@ if (hora < 6) {
 } else {
     console.log("Boa noite!")
 }
-
-
