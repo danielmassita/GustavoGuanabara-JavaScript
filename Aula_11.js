@@ -7,6 +7,10 @@ Pois, para responder a essas e muitas outras perguntas, assista essa aula do Cur
 
 Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor Gustavo Guanabara para o canal CursoemVideo. */
 
+
+
+
+
 /* PERGUNTAS DA AULA ANTERIOR
 - Consegue citar três EVENTOS DOM que podem acontecer com elementos DOM de um site?
     
@@ -59,8 +63,11 @@ Aula do Curso de JavaScript e ECMAScript para Iniciantes, criado pelo professor 
         }
     </script>
 </body>
-
 */
+
+
+
+
 
 /* `${Condições em JS}` - CONDIÇÕES Parte 1
 
@@ -107,6 +114,11 @@ if (condição) {
 
 */
 
+
+
+
+
+
 /* ANOTAÇÕES LUCAS LEAL
 
 NOVIDADES:
@@ -142,6 +154,11 @@ ____________________________
 O método  console.log()  serve para ESCREVER (log) uma MENSAGEM no console.
 
 */
+
+
+
+
+
 
 /* 
 TRANSCRIÇÃO
