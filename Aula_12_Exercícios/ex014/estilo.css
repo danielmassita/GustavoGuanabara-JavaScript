@@ -18,8 +18,13 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
+div {
+    text-align: center;
+    padding: 8px;
+}
+
 footer {
-    color: white;
+    color: white; 
     text-align: center;
     font-style: italic;
 }
