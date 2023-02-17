@@ -273,7 +273,7 @@ e se eu quisesse escrever "tudo bem?" 500 vezes? Você ia ter que ficar copiando
 11:47
 claro que eu não vou escrever 500 vezes, vamos fazer o seguinte: isso aqui são 6 vezes certo vou colocar
 11:52
-um comentário, vou colocar esse código dentro de um comentário, lembrando */, ele não vai executar nada
+um comentário, vou colocar esse código dentro de um comentário, lembrando */ /* , ele não vai executar nada
 11:58
 se apertar F8 nada vai acontecer porque eu coloquei todos os comandos como comentário, vou jogar
 12:03
