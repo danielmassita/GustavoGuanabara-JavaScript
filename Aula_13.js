@@ -1,6 +1,15 @@
 // Aula 13 - Repetições (Parte 1) - Curso JavaScript #13
 // https://youtu.be/5rZqYPKIwkY
 
+/* PERGUNTAS AULA ANTERIOR...
+
+1) Sabe mudar a cor de fundo de um site DINAMICAMENTE, usando o JavaScript? 
+2) Consegue inserir uma imagem dentro do seu site sem ter a tag <img> previamente criada? 
+3) Já treinou bastante o uso de condições simples, compostas, aninhadas e múltiplas? 
+
+
+*/
+
 /* TRANSCRIÇÃO
 0:00
 E ai, completou todos os exercícios da sessão anterior?
