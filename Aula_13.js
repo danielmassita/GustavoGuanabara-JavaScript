@@ -38,7 +38,66 @@ Assim. E de acordo com a hora do cliente, o JS vai atribuir uma alteração no H
         }
     }
     
-2) 
+2) Mesmo sem ter a tag <img> previamente criada, podemos adicionar via JS. No <body> temos um uma <div id="res"> que será usada como local pra criar uma imagem - na verdade, vamos colocar dentro da div "res" uma estrutura "child" que carregará a imagem. 
+
+// No HTML..
+
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+        
+// No JS...
+
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+        img.setAttribute('src', 'nome-da-foto.png')
+
+        // Alguma função ou comando que chama uma alteração na var img, então...
+        
+        res.innerHTML = ''
+        res.innerHTML = 'Uma frase de efeito aqui...'
+        res.appendChild(img)
+        
+3) Sim, nos exercícios! :) 
+
+CONDIÇÃO SIMPLES
+    if (condição) {
+        [   true    ]
+    }
+
+CONDIÇÃO COMPOSTA
+    if (condição) {
+        [   true    ]
+    } else {
+        [   false   ]
+    }
+
+CONDIÇÃO COMPOSTA
+    if (condição) {
+        [bloco1]
+    } else {
+        if (condição2) {
+            [bloco2]        // bloco2 só executa se a cond1 for falsa!
+        } else {
+            [bloco3]        // se cond1 && cond2 == false, exec. bloc3
+        }
+    }
+
+CONDIÇÃO MÚLTIPLA (switch-case-break)
+switch (expressão) {
+    case valor 1:
+        [       ]
+        break
+    case valor 2:
+        [       ]
+        break
+    case valor 3:
+        [       ]
+        break
+    default:
+        [       ]
+        break
+}
 
 */
 
