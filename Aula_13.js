@@ -101,6 +101,52 @@ switch (expressão) {
 
 */
 
+
+
+
+
+/* `${Repetições em JS}` - Parte 1
+
+- Vamos pensar em "comer uma pizza" como atividade que requer repetições. 
+
+function comerPizza() {
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+}
+
+- Partir do primeiro comando até o último (ponto A até o B), escrevendo os códigos da melhor maneira...
+- Vamos pensar que há várias formas, ou seja, ESTRUTURAS DE CONTROLE...
+    - SEQÜÊNCIAS    A --- [ ] --- [ ] --- [ ] --- B // sem 
+    - CONDIÇÕES     (teste lógico ? bloco True : bloco False) // operador ternário
+    - REPETIÇÕES ou LAÇOS
+
+    Começa testando uma expressão, um resultado Verdadeiro ou Falso, mas o comportamento é pontual. 
+
+    A --- TesteLógico --- Verdadeiro [executa bloco e volta pro TesteLógico] em loop --- SE FALSO [sai do laço de repetição] // ENQUANTO a condição for verdadeira, o laço se repete. QUANDO o laço for FALSO o laço é quebrado e segue o fluxo do código...
+
+while (condição) {
+    [bloco True]
+}       // volta pro teste condicional do While e rodar o bloco ENQUANTO for verdadeira
+[...]   // quando a condição deixar de ser verdadeira, sai do bloco e segue o código...
+    
+function comerPizza() {
+    while (temFatia()) {    // Enquanto tem fatia, então executa a função comerFatia().
+        comerFatia()
+    }               
+}                           // Quando não tiver mais fatias, sai bloco. OK para N fatias de pizza.
+
+*/
+
+/* MÃO NA MASSA 
+
+*/
+
 /* TRANSCRIÇÃO
 0:00
 E ai, completou todos os exercícios da sessão anterior?
