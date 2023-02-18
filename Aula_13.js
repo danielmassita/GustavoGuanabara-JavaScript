@@ -143,8 +143,80 @@ function comerPizza() {
 
 */
 
-/* MÃO NA MASSA 
+/* MÃO NA MASSA */
 
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+console.log('Tudo bem?')
+// vai repetir 8 vezes
+
+var contador = 1;
+while (contador <= 6) {
+    console.log('Tudo bem?')
+    contador++
+}
+// Se precisar executar 500, é só alterar a condição contador <= 500. 
+
+var c = 1;
+while (c <= 10) {
+    console.log(`Passo ${c}`)
+    c++
+}
+// Usando Template Strings com Place Holder, podemos inclusive visualizar o índice sendo alterado n vezes.
+
+/*
+O laço WHILE faz o teste primeiro, sendo verdadeiro, executa o bloco, e retorna ao teste lógico, só quando for falso sai e segue o fluxo...
+
+O inverso pode acontecer, sendo que eu PRIMEIRO executo um bloco de código, depois faço o teste lógico, se verdadeiro, faz o loop, se falso, segue o fluxo...
+
+do {
+    [   bloco   ]
+} while (condiçãoTrue)
+
+WHILE é uma Estrutura de Repetição com Teste Lógico no Início!
+DO..WHILE é uma Estrutura de Repetição com Teste Lógico no Final!
+
+Ambos são Estruturas de Repetição (laço/loop), mas com comportamento diferente.
+*/
+
+var i = 1
+do {
+    console.log(`Passo ${i}`)
+    i++
+} while (i <= 6)
+
+/* ANOTAÇÔES LUCAS LEAL
+NOVIDADES:
+
+    Estruturas de  (Laços || Iterações || Repetições || Looping)  :
+
+  while (enquanto)
+
+Esta estrutura faz o teste lógico ANTES de rodar o programa.
+
+Enquanto (while) condição1 for VERDADEIRA, execute o Bloco A.
+
+Ilustração:
+while (condição1) {
+Bloco A
+}
+____________________________
+
+  do/while (faça/enquanto)
+
+Esta estrutura faz o teste lógico DEPOIS de rodar o programa.
+
+Faça (do) a execução do Bloco A, enquanto (while) condição1 for VERDADEIRA.
+
+Ilustração:
+do {
+Bloco A
+} while (condição1)
 */
 
 /* TRANSCRIÇÃO
