@@ -7,6 +7,38 @@
 2) Consegue inserir uma imagem dentro do seu site sem ter a tag <img> previamente criada? 
 3) Já treinou bastante o uso de condições simples, compostas, aninhadas e múltiplas? 
 
+1) Sim, dinamicamente podemos usar um método pra pegar o horário no lado do cliente. Usando o tripé de desenvolvimento Front-End, podemos usar um script.js que é carregado "onload". No arquivo HTML, dentro do <body> vamos chamar uma função a partir do evento: onload="carregar()". Resumindo, na estrutura HTML do arquivo vamos trabalhar no <body> com uma função carregar() que é chamada no evento onload="". Assim, ao carregar toda a página, o HTML vai ativar a função carregar() que terá o seguinte código... 
+Assim. E de acordo com a hora do cliente, o JS vai atribuir uma alteração no HTML, através do comando "document.body.style.background = 'rgb(000, 000, 000)'" - Assim, alterando a cor do fundo de acordo com cada condição (no caso, a hora), em uma ação dinâmica do JS.
+  // No HTML...
+  [...]
+  <body onload="carregar()">
+  [...]
+  
+  // No Script...
+
+      function carregar() {
+        var msg = window.document.getElementById('msg')
+        var img = window.document.getElementById('imagem')
+        var data = new Date()
+        var hora = data.getHours()
+    //  var hora = 11 // hard coded test
+        msg.innerHTML = `Agora são ${hora} horas.`
+        if (hora > 5 && hora <= 12) {
+            // Bom dia!
+            img.src = 'fotomanha.png'
+            document.body.style.background = 'rgb(250, 195, 90)'
+        } else if (hora > 12 && hora < 19) {
+            // Boa tarde!
+            img.src = 'fototarde.png'
+            document.body.style.background = 'rgb(180, 75, 55)'
+        } else {
+            // Boa noite!
+            img.src = 'fotonoite.png'
+            document.body.style.background = 'rgb(4, 59, 123'
+        }
+    }
+    
+2) 
 
 */
 
