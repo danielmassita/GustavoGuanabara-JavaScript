@@ -29,7 +29,10 @@ comerPizza(){
 }
 console.log("Acabaram as fatias, nada mais pra comer...")
 
-2)
+2) 2) Estruturas de Condições testam condições e de acordo com o resultado (true/false) vão efetuar determinada ação. Estrutura de Repetição vai checar uma condição, e enquanto for verdadeira, repetirá uma determinada ação, e novamente (em loop) vai checar a condição.
+
+3) WHILE é uma Estrutura de Repetição com Teste Lógico no Início! e DO..WHILE é uma Estrutura de Repetição com Teste Lógico no Final!
+
 
 
 
