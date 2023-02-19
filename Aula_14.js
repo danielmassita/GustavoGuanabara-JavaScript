@@ -6,5 +6,31 @@
 2) Sabe diferenciar uma estrutura de condição  e as estruturas de repetição? 
 3) Consegue dizer a diferença entre as estruturas WHILE e DO..WHILE? 
 
+1) Eu posso utilizar uma linha pra cada código assim sendo um "hard-code", por exemplo comer 8 fatias de pizza comerPizza(), numa função com 8 comandos pra comerPizza(). Esse seria o pior jeito. Podemos fazer uma ESTRUTURA DE REPETIÇÃO ou LAÇO, com uma expressão que quando testada, efetua determinado comando enquanto a condição de teste for válida. 
+
+comerPizza(){
+	comerFatia();
+	comerFatia();
+	comerFatia();
+	comerFatia();
+	comerFatia();
+	comerFatia();
+	comerFatia();
+	comerFatia();
+}
+console.log("Acabaram as fatias, nada mais pra comer...")
+
+var temFatia = 8
+comerPizza(){
+	while (temFatia.length > 0) {
+		comerFatia();
+		temFatia--
+	}	
+}
+console.log("Acabaram as fatias, nada mais pra comer...")
+
+2)
+
+
 
 */
