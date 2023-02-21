@@ -32,11 +32,39 @@ console.log("Acabaram as fatias, nada mais pra comer...")
 2) 2) Estruturas de Condições testam condições e de acordo com o resultado (true/false) vão efetuar determinada ação. Estrutura de Repetição vai checar uma condição, e enquanto for verdadeira, repetirá uma determinada ação, e novamente (em loop) vai checar a condição.
 
 3) WHILE é uma Estrutura de Repetição com Teste Lógico no Início! e DO..WHILE é uma Estrutura de Repetição com Teste Lógico no Final!
-
-
-
-
 */
+
+/* `${REPETIÇÕES EM JS} - Parte 2`
+
+- Relembrando Estruturas de Controle...
+- SEQUÊNCIAS que são blocos de códigos executados um depois do outro, independente de desvios... 
+- CONDIÇÕES são testes lógicos que dão dois ou mais desvios, podendo executar um bloco OU outro, nunca ambos, cabendo desvios de acordo com as condições. São exemplos o IF (simples), IF/ELSE (composta), OPERADOR TERNÁRIO (testeLógico ? açãoTrue : açãoFalse) e a estrutura SWITCH-CASE-BREAK, que permite múltiplas condições (melhor pra elementos exatos, como dias da semana). As condições podem ser ANINHADAS (uma dentro da outra) ou múltiplas (switch-case-break).
+- REPETIÇÕES ou LAÇOS, podem executar várias vezes os códigos, em loop, até que uma determinada condição seja alterada. WHILE faz um laço mas testa ANTES (teste lógico no início). A estrutura DO..WHILE faz o bloco de ação primeiro, e testa DEPOIS (teste lógico no final). 
+
+- REPETIÇÃO COM VARIÁVEL DE CONTROLE (hexágono irregular) e fazemos basicamente três coisas: INICIALIZAÇÃO e o TESTE LÓGICO, e no final uma volta mas com um INCREMENTO. 
+	Na primeira passagem, se faz a Inicialização e o Teste Lógico. Sendo o teste verdadeiro, vai executar o código do bloco (com um ou vários comandos). Ao concluir o bloco, vai ocorrer um LOOP, uma volta, um LAÇO pra voltar ao CONTROLE mas durante o LOOP também acontece o INCREMENTO (i++). O caminho de encerramento só vai acontecer quando o teste lógico retornar False. 
+
+for (início ; teste lógico ; incremento) {
+	[bloco de códigos]
+	[bloco de códigos]
+	[...]
+} 
+// Podemos colocar dentro do for um while, do..while, if, if/else, switch-case-break. Ao final da execução do bloco, ocorre o loop CONCOMITANTEMENTE ao INCREMENTO (i++). */
+
+// 
+var c=1
+while (c <= 10) {
+	[bloco]
+	c++
+}
+
+// Reescrevendo a Estrutura FOR. 
+for (var c=1; c <= 10);	c++) {
+	[bloco]
+}
+
+/* MÃO NA MASSA */
+
 
 /* TRANSCRIÇÃO 
 0:00
