@@ -63,9 +63,34 @@ for (var c=1; c <= 10);	c++) {
 	[bloco]
 }
 
-/* MÃO NA MASSA */
+/* MÃO NA MASSA E DEPURADOR (debug) 
+ambiente.js*/
 
-/* ANOTAÇÕES COMPARTILHADAS LUCAS LEAL
+console.log('Vai começar...')
+for (var c = 1; c <= 4; c++){
+	console.log(c)
+}
+console.log('FIM!')
+
+/* DEBUG (start debug)
+- abrir o console de depuração
+- adicionar o "breakpoint" com a bolinha vermelha
+- monitorar a variável c Watch+ (não disponível)
+- Executar o programa (play)
+- Continuar ou SteOver (F10)
+- A bolinha vermelha marca o comando como breakpoint...
+- A seta amarela marca o ponto que será executado na linha...
+- Após executar, a variável C vai inicializar (mas ainda Undefined) e passar a ser c = 1 após o F10 seguir no novo valor de c...
+- Seta amarela acompanha, C <= 4? Sim, verdade, então executa o bloco (F10)... 
+- Aparece no console o valor de c, e volta pro incremento (c++) a seta amarela... 
+- O c passa a valer 2... A seta amarela segue pro teste lógico (c <= 4)... Sim, true! 
+- A seta amarela desce pro bloco e executa o código... Aparece o console.log...
+- A seta amarela incrementa no c++, e continua o loop...
+- Até o c incrementar e ser 5. C <= 4? Não, é False. A seta amarela sai do bloco e segue pra última linha de código...
+- A seta amarela executa o console.log('Fim'). Saímos do bloco do loop.
+*/
+
+/* ANOTAÇÕES COMPARTILHADAS (Lucas Leal)
 
 NOVIDADES:
 
@@ -93,7 +118,13 @@ Enquanto  c  for MENOR ou IGUAL à 10, EXECUTE o BLOCO de CÓDIGOS.
 Incremente +1 em  c  .
   *repete-se o teste lógico. Se verdadeiro: executa-se o bloco e faz-se o incremento. Se falso: finaliza-se a estrutura.*
 
+
+programaçao é pura filosofia! 
+    else if ( se voce escolher ''isso'', o resultado vai ser sempre o que voce escolheu, como um jogo de escolhas que geram consequencia ) 
+       while ( enquanto essa for sua escolha, tudo se repetirá )
+       
 */
+
 /* TRANSCRIÇÃO 
 0:00
 Estamos chegando há mais um vídeo do seu Curso em Vídeo de JavaScript
