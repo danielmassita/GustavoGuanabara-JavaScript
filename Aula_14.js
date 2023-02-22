@@ -65,7 +65,35 @@ for (var c=1; c <= 10);	c++) {
 
 /* MÃO NA MASSA */
 
+/* ANOTAÇÕES COMPARTILHADAS LUCAS LEAL
 
+NOVIDADES:
+
+    for (para)
+
+  Estrutura de REPETIÇÃO com VARIÁVEL de CONTROLE. Syntax:
+for (inicio; teste; incremento) {bloco de códigos}
+
+Esta estrutura usa uma VARIÁVEL de CONTROLE, esta que representa o PONTO INICIAL do LOOP. Este ponto será VERIFICADO apenas UMA VEZ.
+Após esta verificação, passa-se para TESTE LÓGICO. Este, ENQUANTO VERDADEIRO, EXECUTARÁ o BLOCO de CÓDIGOS e FARÁ o INCREMENTO na VARIÁVEL de CONTROLE. Após isto, REPETE-SE o TESTE LÓGICO.
+Quando o teste lógico retornar FALSO, FINALIZA-SE a ESTRUTURA de REPETIÇÃO.
+
+  Simplificando:
+Esta estrutura REPETE um BLOCO de CÓDIGOS um DETERMINADO NÚMERO de VEZES, onde define-se:
+o início do contador (inicio); a condição para que o loop aconteça (teste); a progressão do contador (incremento)
+
+  Ilustração:
+for (var c = 1; c <= 10; c++) {bloco de códigos}
+
+  início (este é lido apenas uma vez)
+Criou-se  var c  e atribuiu-se o valor  1  nesta.
+  teste
+Enquanto  c  for MENOR ou IGUAL à 10, EXECUTE o BLOCO de CÓDIGOS.
+  incremento
+Incremente +1 em  c  .
+  *repete-se o teste lógico. Se verdadeiro: executa-se o bloco e faz-se o incremento. Se falso: finaliza-se a estrutura.*
+
+*/
 /* TRANSCRIÇÃO 
 0:00
 Estamos chegando há mais um vídeo do seu Curso em Vídeo de JavaScript
