@@ -1,6 +1,8 @@
 // Aula 14 - Repetições (Parte 2) - Curso JavaScript #14
 // https://youtu.be/eX-lkN_Zahc
 
+// Material de Estudos: https://www.treinaweb.com.br/blog/estruturas-condicionais-e-de-repeticao/ + https://www.treinaweb.com.br/blog/estruturas-condicionais-e-estruturas-de-repeticao-em-javascript
+
 /* PERGUNTAS AULA ANTERIOR
 1) O que eu faço se quiser fazer uma determinada atividade acontecer várias vezes? 
 2) Sabe diferenciar uma estrutura de condição  e as estruturas de repetição? 
