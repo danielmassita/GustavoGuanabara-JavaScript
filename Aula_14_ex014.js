@@ -1,7 +1,14 @@
 // Exercícios da Aula 14 - Parte 4
 // https://youtu.be/6tyHypeY4-8
 
-/* QUESTÕES DA AULA ANTERIOR */
+/* QUESTÕES DA AULA ANTERIOR 
+1) Já aprendeu a usar a extensão Watch In Chrome no VS Code? No caso Live Server? 
+2) Já aprendeu a usar o modo de DEPURAÇÃO no VS Code? 
+3) Já fez todos os testes com a estrutura while, do..while, for? 
+4) Quer aprender um pouco mais em como manipular dados em CONTROLES HTML no JS? 
+
+
+*/
 
 /* TRANSCRIÇÃO 
 0:00
