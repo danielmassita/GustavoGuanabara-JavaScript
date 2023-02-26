@@ -10,6 +10,92 @@
 
 */
 
+/* 
+///Html:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+           <p>Inicio:<input type="number" name="numInicio" id="numInicio"></p>
+           <P>Fim:<input type="number" name="numFim" id="numFim"></P>
+           <P>Passo<input type="number" name="passo" id="passo"></P>
+           <input type="button" value="contar" onclick="contar()">
+        </div>
+        <div id='res'>
+            Preparando a contagem
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy; Daviddds
+        </p>
+    </footer>
+    <script src="exe.js"></script>
+</body>
+</html>
+/*css
+body{
+    background-color: rgb(61, 61, 199);
+}
+header{
+    text-align: center;
+    font:normal 15pt Arial;
+    color: white;
+}
+section{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+}
+div{
+    margin-top: 8px;
+}
+footer{
+    text-align: center;
+    font:italic;
+}
+///script
+function contar() {
+    var numInicio = document.getElementById('numInicio')
+    var numFim = document.getElementById('numFim')
+    var passo1 = document.getElementById('passo')
+    var numIn = Number(numInicio.value)
+    var numF = Number(numFim.value)
+    var passo = Number(passo1.value)
+    var res = document.getElementById('res')
+    if(numInicio.value.length == 0){
+        res.innerText = 'impossivel contar'
+    } else if (passo == 0){
+        alert('passo invalido, considerando passo = 1')
+        var passo = 1
+        while(numIn <= numF){
+            res.innerText += ` ${ numIn }`
+             numIn = numIn + passo
+         }
+    } else {
+        for( ; numIn <= numF ; numIn = numIn + passo ){
+            res.innerText += ` ${numIn} `
+        }
+        }
+        /*while(numIn <= numF){
+          res.innerText += ` ${ numIn }`
+           numIn = numIn + passo*/
+       }
+*/
+
 /* TRANSCRIÇÃO 
 0:00
 Mais uma aula de exercício chegando aqui dentro de seu curso de
