@@ -94,6 +94,282 @@ function contar() {
           res.innerText += ` ${ numIn }`
            numIn = numIn + passo*/
        }
+*/ 
+
+
+/* POST 666.666
+
+666.666
+há 1 mês
+CSS: 
+body{
+    width: auto;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #2c78be;
+    color: white;
+}
+
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;    
+    background-color: #538ae2;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#botao{
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 90px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#botao:hover{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: #2b5aa5;
+    border: none;
+    border-radius: 2px;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    width: 95px;
+    transition: all 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+input{
+    width: 34px;
+    margin: 5px;
+    position: static;
+}
+input:hover {
+    width: 36px;
+    margin: 5px;
+    transition: all 0.2s;
+}
+#res{
+    margin-top: 34px;
+}
+Responder
+666.666
+666.666
+há 1 mês
+JS:
+function contar() {
+    function contando(){
+        inicio = document.getElementById("inicio_v")
+        fim = document.getElementById("fim_v")
+        passo = document.getElementById("passo_v")
+        resultado = document.getElementById("res")
+        i = Number(inicio.value)
+        f = Number(fim.value)
+        p = Number(passo.value)
+        for (c = i; c <= f; c = c + p){
+            resultado.innerHTML += `${c} `
+            chegou.innerText = `Chegou!`
+    }
+}
+contando()
+}
+function reset(){
+    resultado.innerHTML = null
+    chegou.innerText = null
+    document.getElementById('passo_v').value = ""
+    document.getElementById('fim_v').value = ""
+    document.getElementById('inicio_v').value = ""
+}
+Responder
+666.666
+666.666
+há 1 mês
+EX 2 esse foi fofa errei uma coisa boba e fiquei mais de 1 hora
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+    <style>
+    </style>
+</head>
+
+<body>
+
+<!--FIM-->
+<section>
+Número: <input type="number" value="0" id="numero">
+<input id="botao" type="button" value="Gerar Tabuada" onclick="gerar()">
+<br>
+</section>
+<section>
+    <textarea id="atalho" cols="30" placeholder="Preencha o campo acima" rows="10" disabled></textarea>
+</section>
+
+
+<!--FIM-->
+    <script src="script.js"></script>
+
+</body>
+</html>
+Responder
+666.666
+666.666
+há 1 mês
+CSS:
+body{
+    width: auto;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #93b6d6;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;    
+    background-color: #538ae2;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#botao{
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 2px;
+    font-size: 8px;
+    width: 90px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#botao:hover{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: #2b5aa5;
+    border: none;
+    border-radius: 2px;
+    font-size: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    width: 90px;
+    transition: all 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 17px 35px, rgba(0, 0, 0, 0.22) 0px 12px 10px;
+}
+input:focus, textarea:focus {
+    background: rgb(206, 206, 206);
+    transition: all 0.5s;
+    
+}
+input:disabled, textarea:disabled {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+input:target-text, textarea::marker {
+    background: rgb(161, 51, 51);
+}
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+textarea::-webkit-scrollbar {
+width: 1em;
+}
+
+#atalho {
+    border: 1px solid black;
+    border-radius: 1px;
+    margin-top: 20px;
+    -webkit-touch-callout: none; /* iOS Safari 
+      -webkit-user-select: none; /* Safari 
+       -khtml-user-select: none; /* Konqueror HTML 
+         -moz-user-select: none; /* Old versions of Firefox 
+          -ms-user-select: none; /* Internet Explorer/Edge 
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox 
+  }
+
+#numero {
+    width: 40px;
+    color: black;
+}
+#numero:focus{
+    transition: all 0.2s;
+    text-decoration: disabled;
+    cursor: auto;
+}
+Responder
+666.666
+666.666
+há 1 mês
+JS:
+function gerar(){
+
+    numero = document.getElementById("numero")
+    caixa = document.getElementById("atalho")
+    c = 0 
+    n = Number(numero.value)
+    
+    if (n == null){
+        alert("Revise os dados e tente novamente.")
+        caixa.value = ""
+
+    }
+    else{
+    if (caixa.value.length > 30){
+        caixa.innerHTML = ""
+
+    }
+    for (c = 1; c <= 10; c++){
+    soma = c * n
+    caixa.innerHTML += n + " x " + c + " = " + soma + "\n"
+        }
+    }
+}
+Responder
+
+
 */
 
 /* TRANSCRIÇÃO 
