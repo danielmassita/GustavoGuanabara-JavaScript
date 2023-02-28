@@ -24,19 +24,19 @@ F10 (step over, percorre o código etapa por etapa)
 3) Vamos por partes... Fazer um contador que exibe no console a contagem de 1 até 10.*/
 
 // WHILE
-let i = 0
+let i = 1
 while (i < 11) {
-    console.log(`O valor de i é: ` + i)
+    console.log("O valor de i é: " + i)
     i++
 }
-console.log('Fim da contagem com verificação no começo (antes) do bloco de código..')
+console.log('Fim da contagem com verificação no começo (antes) do bloco de código...')
 
 // DO..WHILE
 let i = 0
 do {
     console.log(`O valor de i é: ${i}`)
     i++
-} while (i <= 10)
+} while (i < 10)
 console.log('Fim da contagem com verificação no final (depois) do bloco de código.')
 
 // FOR
@@ -46,9 +46,19 @@ for (i = 0; i <= 10; i++) {
 console.log('Fim da contagem com verificação no início, usando o método FOR, com três elementos.')
 */ 
 
-/* `${Mão na Massa!}`
+/* `${MÃO NA MASSA!}`
 
+- Exercícios são mais importantes que teoria...
+- Para incentivar, terá inclusive conteúdo novo durante o treinamento...
+- Vamos resgatar o modelo da Aula 12 com os componentes básicos de um site pra unir JS, HTML e CSS (body, header, section (div1, div2), footer). 
 
+RETORNAR TODOS OS EXERCÍCIOS (meu notebook quebrou, criar nova pasta no note da Bia + branch/main da pasta Exercícios no futuro)
+
+Parte 1 - Criação Modelo ( https://youtu.be/b2K7eo5Jdj8 )
+Parte 2 - 
+Parte 3
+Parte 4
+Parte 5
 
 */
 
