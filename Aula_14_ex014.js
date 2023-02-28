@@ -7,6 +7,21 @@
 3) Já fez todos os testes com a estrutura while, do..while, for? 
 4) Quer aprender um pouco mais em como manipular dados em CONTROLES HTML no JS? 
 
+1) Sim, usando o Live Server. Podemos deixar configurada a extensão pra sempre estar ativa. 
+@ext:ritwickdey.LiveServer
+("URL" line VS Code)
+>Live Server
+Alt+L Alt+O (enable and open with Live Server)
+Alt+L Alt+C (stop with Live Server)
+
+2) Sim, aperta F5 pra abrir o Debug Mode 
+Debug Mode > Select Debuger > Node.JS && VSC Extension
+PONTO VERMELHO (braek de início da análise do código)
+SETA AMARELA (momento atual do código)
+WATCH (dizer qual variável quer acompanhar)
+F10 (step over, percorre o código etapa por etapa)
+
+3)
 
 */
 
