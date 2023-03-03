@@ -75,21 +75,21 @@ function contar(){
 // TABUADA COM RETORNO NA TABELA DO OPTION
 
 function tabuada(){
-    let num = document.getElementById('txtn') // 
-    let tab = document.getElementById('seltab')
+    let num = document.getElementById('txtn') // var num recebe o input do usuário 'txtn' do html...
+    let tab = document.getElementById('seltab') // var tab recebe o 'seltab' da estrutura do html sendo <select>, <option>... 
 
-    if (num.value.length == 0) {
+    if (num.value.length == 0) { // Validação de dados pra evitar input vazio do usuário...
         window.alert('Por favor, digite um número!')
     } else {
-        let n = Number(num.value)
-        let c = 1
-        tab.innerHTML = ''
+        let n = Number(num.value) // atribui nova variável pra trabalhar n, sendo o Number(num.value) puxado² do html...
+        let c = 1 // Seta o contador pro valor inicial, e ainda ajuda a montar a tabuada pois vai se repetir com o iterador...
+        tab.innerHTML = '' // Cria dinamicamente um novo texto '' dentro do HTML na área da tabela <select>...
         while (c <= 10) {
-            let item = document.createElement('option')
-            item.text = `${n} x ${c} = ${n*c}`
-            item.value = `tab${c}` // faz muito sentido o item com value pro PHP
-            tab.appendChild(item)
-            c++
+            let item = document.createElement('option') // Uma nova variável chamada item CRIA um novo elemento dentro do tab, do tipo 'option'
+            item.text = `${n} x ${c} = ${n*c}` // O texto do elemento (item.text) passa a ser a template string dizendo 1 x c = resultado... De 1 a 10...
+            item.value = `tab${c}` // faz muito sentido o item com value pro PHP // Atribuímos o valor e nome de cada novo item sendo tab1, tab2, tab3, cf. iterador.
+            tab.appendChild(item) // Ao final, adiciona um novo 'item' ao final, pra que na próximo loop, isso já se repita em uma nova <option>tab2 e etc...
+            c++ // Incremento do valor do contador/iterador...
         }
     }
 }
