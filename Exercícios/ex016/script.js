@@ -1,4 +1,3 @@
-// window.alert(`Olá, Mundo!`)
 function contar(){
     let ini = window.document.getElementById('txti')
     let fim = document.getElementById('txtf')
