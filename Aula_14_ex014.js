@@ -57,8 +57,9 @@ RETORNAR TODOS OS EXERCÍCIOS (meu notebook quebrou, criar nova pasta no note da
 Parte 1 - Criação Modelo HTML, JS, CSS ( https://youtu.be/b2K7eo5Jdj8 )
 Parte 2 - Criação da Hora do Dia, com texto, cor de fundo e imagens dinâmicas conforme hora cliente ( https://youtu.be/UXSWgnbSHxs )
 Parte 3 - Criação do Verificador de Idade, com textos, cor de fundo e imagens dinâmicas conforme ano de nascimento do usuário input ( https://youtu.be/f5es-PpaUI8 )
-Parte 4
-Parte 5
+Parte 4 - Duplicar pasta Modelo e analisar e tentar solo um Contador e uma Tabuada ( https://youtu.be/6tyHypeY4-8 )
+Parte 5 - Contador com input Inicial, Final e Passos, usando JS com while e if's e controle de dados ( https://youtu.be/oMNbc_LFz8w )
+Parte 6 - Tabuada com uso do iterador (for) e com tabela no HTML usando 'option' e adicionando linha 'item' em cada iteração ( https://youtu.be/mfHAQ-4Rspw )
 
 */
 
