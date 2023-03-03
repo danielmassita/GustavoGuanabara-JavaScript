@@ -1,8 +1,13 @@
 // Aula 15 - Variáveis Compostas
 // https://youtu.be/XdkW62tkAgU
 
-/* MÓDULO F
-- 
+/* MÓDULO F - Avançando nos Estudos
+- Variáveis Compostas (arrays)
+- Uso de Funções e Eventos (function, method, event)
+- Passagem de Parâmetros
+- Exercícios Arrays, Vetores, funcionalidades...
+- Próximos Passos...
+
 */
 
 /* PERGUNTAS AULA ANTERIOR 
@@ -100,3 +105,5 @@ function tabuada(){
 4) Sim, mas ainda não entendi o motivo...
 
 */
+
+
