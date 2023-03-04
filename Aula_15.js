@@ -106,4 +106,7 @@ function tabuada(){
 
 */
 
+/* AULA 15 - VARIÁVEIS COMPOSTAS EM JAVASCRIPT 
+- O que é uma variável composta? 
 
+*/
