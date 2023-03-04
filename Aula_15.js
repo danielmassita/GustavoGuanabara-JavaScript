@@ -107,6 +107,45 @@ function tabuada(){
 */
 
 /* AULA 15 - VARIÁVEIS COMPOSTAS EM JAVASCRIPT 
+
 - O que é uma variável composta? 
+- VARIÁVEL SIMPLES é uma variável que só consegue armazenar um único valor por vez, sendo necessário perder esse valor pra atribuir um novo...
+- VARIÁVEIS COMPOSTAS devem ser capazes de armazenar vários valores em uma mesma estrutura.
+- No exemplo do terreno pro estacionamento, tínhamos várias vagas de automóveis e colocamos um identificador (a0, a1, a2...), isso consome muito código na hora de programar...
+
+vaga a1 = 
+vaga a2 =
+vaga a3 = 
+vaga a4 = 
+vaga a5 = 
+
+- Precisamos remover um carro da vaga pra ficar livre e depois colocar outro carro. Não posso ter dois carros na mesma vaga... Mas o código, se tiver muitos carros, ficará enorme...
+- Todas as vagas serão então denominadas em conjunto:
+
+vaga a = [] //
+
+- Para cada vaga, vamos usar um índice (sempre começam em zero)... E vamos declarar com COLCHETES [] pra adquirir o typeof de OBJECT (array).
+
+vaga a = [    ,     ,    ]
+vaga a = [carroX, carroY, carroZ] 
+// cada vaga possui um índice, a[0], a[1]. a[2].
+
+- A variável a é uma VARIÁVEL COMPOSTA, ou um VETOR (em inglês, um ARRAY)...
+- Vetor é uma variável com vários espaços, que no caso, são compostos de ELEMENTOS...
+- ELEMENTO é um par que agrupa o espaço da memória, o valor dentro dele e o índice/chave (key)...
+- Por último, temos o conteúdo (VALOR) de cada elemento.
+
+"Um array ou vetor ou variável composta é uma variável que tem vários elementos, cada elemento é composto por seu valor e uma chave de identificação."
+*/
+
+let num = []
+// let num = [    ,     ,     ]
+let num = [5, 8, 4]
+
+// O elemento zero tem o valor 5. O elemento um tem o valor 8. O elemento dois tem o valor 4.
+
+/* MÃO NA MASSA!!! AMBIENTE.JS
+
+*/
 
 */
