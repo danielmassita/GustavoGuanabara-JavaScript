@@ -147,6 +147,7 @@ let num = [5, 8, 4]
 /* MÃO NA MASSA!!! AMBIENTE.JS */
 
 let num = []
+num = [5, 8, 2]
 console.log(`O nosso número no array é o ${num[0]}.`)
 console.log(`O nosso número no array é o ${num[1]}.`)
 console.log(`O nosso número no array é o ${num[2]}.`)
