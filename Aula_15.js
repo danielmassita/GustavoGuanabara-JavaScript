@@ -144,7 +144,14 @@ let num = [5, 8, 4]
 
 // O elemento zero tem o valor 5. O elemento um tem o valor 8. O elemento dois tem o valor 4.
 
-/* MÃO NA MASSA!!! AMBIENTE.JS
+/* MÃO NA MASSA!!! AMBIENTE.JS */
+
+let num = []
+console.log(`O nosso número no array é o ${num[0]}.`)
+console.log(`O nosso número no array é o ${num[1]}.`)
+console.log(`O nosso número no array é o ${num[2]}.`)
+
+
 
 */
 
