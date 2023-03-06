@@ -157,3 +157,201 @@ console.log(`O nosso número no array é o ${num[2]}.`)
 */
 
 */
+
+/* 
+Lucas Leal
+há 3 meses (editado)
+RELEMBRANDO:
+
+  O que é uma VARIÁVEL?
+É um ESPAÇO VAGO, dedicado dentro da memória do computador, que permite você ARMAZENAR DADOS.
+
+    NOVIDADES:
+
+  Diferença entre VARIÁVEL SIMPLES e (VARIÁVEL COMPOSTA || ARRAY || VETOR):
+
+Uma variável SIMPLES só consegue armazenar UM VALOR por vez. Syntax:
+let identificador = valor
+
+Uma variável COMPOSTA é capaz de armazenar VÁRIOS VALORES em uma MESMA ESTRUTURA. Syntax:
+let identificador = [valor, valor, valor]
+
+    Exemplo:
+let num = [5, 8, 4]
+                   0  1  2 (posições)
+
+  Nesta array há:
+3 ELEMENTOS (elemento é conjunção de: VALOR && POSIÇÃO)
+com VALORES 5, 8 e 4, respectivamente.
+o valor 5 está na POSIÇÃO 0;
+o valor 8 está na POSIÇÃO 1;
+o valor 4 está na POSIÇÃO 2.
+*posição == índice == chave == key
+
+  Para ADICIONAR um NOVO VALOR à esta ARRAY em uma POSIÇÃO ESPECÍFICA:
+num[3] = 6
+  Ou seja:
+ATRIBUA o VALOR "6" na POSIÇÃO 3.
+Agora  num  vale: [5, 8, 4, 6]
+
+  Para ADICIONAR um NOVO VALOR à esta ARRAY na ÚLTIMA POSIÇÃO:
+num.push(7)
+  Ou seja:
+ATRIBUA o VALOR "7" na ÚLTIMA POSIÇÃO.
+Agora  num  vale: [5, 8, 4, 6, 7]
+
+  Para RETORNAR o COMPRIMENTO desta ARRAY:
+num.length
+  Ou seja:
+RETORNE a QUANTIDADE de ELEMENTOS/KEYS da ARRAY  num  .
+O valor retornado é: 5
+
+----------
+
+  Para ORDENAR CRESCENTEMENTE os ELEMENTOS/VALORES desta ARRAY:
+num.sort()
+  Ou seja:
+Agora  num  vale: [4, 5, 6, 7, 8]
+
+ATENÇÃO: este método apresenta algumas PECULIARIDADES que podem gerar CONFUSÃO ao tentar ordenar tanto STRINGS quanto NUMBERS. O que ele faz EXATAMENTE: O método  sort()  TRANSFORMA os ELEMENTOS de um ARRAY em STRING e depois, utilizando o sistema de Codificação de Caracteres UTF-16 (Unicode Transformation Format 16-bit), COMPARA a UNIDADE de CÓDIGO de CADA CARACTERE, em seu formato DECIMAL (Unicode Decimal Characters), ordenando-os CRESCENTEMENTE. Simplificando: cada caractere têm um número que o representa (indo de 0 à 65535). Ex: "e" = 101; "L" = 76, "Z" = 90, etc. O  sort()  irá ORDENAR os CARACTERES com base NESTES NÚMEROS, e não com base nos CARACTERES em SI. Por isso é um ordenamento CRESCENTE, e não ALFABÉTICO e nem NUMÉRICO. Para ver a tabela, jogue no Google:  "Unicode Table (Decimal)"  . Copie, cole e rode este código para ver EXEMPLOS:
+
+// Vamos ORDENAR CRESCENTEMENTE os VALORES de  array  e EXIBIR no CONSOLE os VALORES ORDENADOS e seus respectivos CÓDIGOS UNICODE.
+let array = ['b', 'p', 'c', 'a']
+array.sort()
+console.log("ORDENADO:", array)
+for (let x in array) {
+    console.log(`LETRA: ${array[x]} CÓDIGO: ${array[x].charCodeAt(0)}`)
+}
+// Os códigos foram ORDENADOS de maneira CRESCENTE. Mas os CARACTERES TAMBÉM ficaram em ORDEM ALFABÉTICA, por quê? Se você observar a tabela que mencionei anteriormente, verá que os CÓDIGOS dos CARACTERES que compõem o ALFABETO em MINÚSCULO estão DISPOSTOS de maneira CRESCENTE, começando no  "a" = 97  e terminando no  "z" = 123. Devido a ESTA DISPOSIÇÃO, os CARACTERES ficaram TAMBÉM em ORDEM ALFABÉTICA.
+
+console.log('----------')
+
+// Vamos ALTERAR o "p" MINÚSCULO para "P" MAIÚSCULO e REPETIR o PROCESSO.
+array = ['b', 'P', 'c', 'a']
+array.sort()
+console.log("ORDENADO:", array)
+for (let x in array) {
+    console.log(`LETRA: ${array[x]} CÓDIGO: ${array[x].charCodeAt(0)}`)
+}
+// O "P" MAIÚSCULO foi exibido ANTES de TODOS os outros CARACTERES MINÚSCULOS, por quê? Pelo mesmo motivo. O ALFABETO em MAIÚSCULO começa no  "A" = 66  e  termina no  "Z" = 90  . Ou seja, TODOS os CARACTERES MAIÚSCULOS aparecerão ANTES dos MINÚSCULOS.
+
+console.log('----------')
+
+// E com os NÚMEROS é a QUASE a MESMA COISA. Eles são CONVERTIDOS em STRING e considera-se apenas o CÓDIGO do 1° CARACTERE. Os códigos começam no  "0" = 48  e  terminam no  "9" = 57  .
+const numeros = [99, 25, 100]
+numeros.sort()
+console.log("ORDENADO:", numeros)
+for (let x in numeros) {
+    console.log(`NÚMERO: ${numeros[x]} CÓDIGO: ${String(numeros[x]).charCodeAt(0)}`)
+}
+// ↑ Faça o teste: ACRESCENTE os valores  9, 2, 1  dentro do array  numeros  e rode. Você verá que os códigos são IGUAIS, porque o  sort()  só considera o 1° caractere.
+
+console.log('----------')
+
+// Como então ORDENAR os números CORRETAMENTE, tanto CRESCENTEMENTE quanto DECRESCENTEMENTE? A sintaxe do método  sort()  permite que se use uma FUNÇÃO de COMPARAÇÃO como PARÂMETRO. Syntax:  array.sort(compareFunction)  . Esta função DEVE RETORNAR um valor POSITIVO, NEGATIVO ou ZERO. Ex:
+const numbers = [40, 100, 1, 5, 25, 10]
+numbers.sort((a, b) => a - b)
+console.log("ORDENADO:", numbers)
+/* O que aconteceu:
+ a  - b   = returned value
+100 - 1   = 99 [40, 1, 100, 5, 25, 10]
+100 - 5   = 95 [40, 1, 5, 100, 25, 10]
+100 - 25  = 75 [40, 1, 5, 25, 100, 10]
+100 - 10  = 90 [40, 1, 5, 25, 10, 100]
+40 - 1    = 39 [1, 40, 5, 25, 10, 100]
+40 - 5    = 35 [1, 5, 40, 25, 10, 100]
+40 - 25   = 15 [1, 5, 25, 40, 10, 100]
+40 - 10   = 30 [1, 5, 25, 10, 40, 100]
+25 - 10   = 15 [1, 5, 10, 25, 40, 100] ←  numbers  ORDENADOS CRESCENTEMENTE.
+
+Quando o VALOR RETORNADO é NEGATIVO, então ORDENA-SE:  a  ANTES  de  b  
+Quando o VALOR RETORNADO é POSITIVO, então ORDENA-SE:  a  DEPOIS de  b
+
+Ou seja, os NÚMEROS RETORNADOS só tem UM PROPÓSITO, saber se é: POSITIVO, NEGATIVO ou ZERO. O valor em si não importa. O nome disso é: Lei da Tricotomia ou Three Way Comparison.
+
+*Eu OMITI TODOS os resultados NEGATIVOS porquê, além do fato de que iria ficar GIGANTESCO, quando isto acontece, NADA ACONTECE. Ilustração:  a(1) - b(5)  RETORNARÁ  -4 (negativo)  . POSICIONAR o  a  ANTES  do  b  não vai mudar nada, porque ele já está antes do  b  .
+
+*Para ORDENAR DECRESCENTEMENTE, basta mudar o código da função de  a - b  para  b - a  . Ilustração:  b(1) - a(5)  RETORNARÁ  -4 (negativo)  . Então o  a  será POSICIONADO ANTES de  b  .*/
+
+----------
+
+  Para BUSCAR um VALOR dentro desta ARRAY:
+num.indexOf(7)
+  Ou seja:
+RETORNE a CHAVE/ÍNDICE do VALOR 7.
+O valor retornado é: 3
+*Caso seja passado um número INEXISTENTE como PARÂMETRO, o valor retornado será: -1
+
+    ESTRUTURA de REPETIÇÃO: for/in (para/em)
+
+Esta estrutura faz um LOOP ATRAVÉS das PROPRIEDADES de um OBJETO ou ARRAY. Syntax:
+for (key in object) {}
+for (key in array) {}
+
+  Ilustração (crie um documento HTML, cole este código e rode no seu navegador):
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in</title>
+</head>
+<style>
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    txt = "<h2>Ilustração de for in ATRAVÉS de um ARRAY:</h2>"
+
+    const numeros = [45, 4, 9, 16, 25]
+
+    for (let x in numeros) {
+        txt += `índice: ${x} | valor: ${numeros[x]} <br>`
+    }
+
+    /* Lê-se: PARA(for) cada POSIÇÃO(x) NO(in) ARRAY(numeros) {execute este bloco}
+
+    inseriu-se no 1° placeholder: a CHAVE(x);
+    Foi exibido: a CHAVE de CADA PROPRIEDADE do OBJETO.
+
+    PERCEBA: em ARRAYS, a CHAVE é o ÍNDICE de cada ELEMENTO (chave:valor == índice:valor).
+
+    inseriu-se no 2° placeholder: o ARRAY(numeros) na POSIÇÃO de x;
+    Foi exibido: o VALOR de CADA PROPRIEDADE do OBJETO. 
+    
+    LEMBRE-SE:
+    TODO ARRAY É UM OBJETO. MAS NÃO TODO OBJETO É UM ARRAY. 
+
+    //----------------------------------------
+
+    txt += "<h2>Ilustração de for in ATRAVÉS de um OBJETO:</h2>"
+
+    const pessoa = {nome: 'Elon', Snome: 'Musk', idade: 51}
+    
+    for (let x in pessoa) {
+        txt += `chave: ${x} | valor: ${pessoa[x]}<br>`
+    }
+
+    /* Lê-se: PARA(for) cada POSIÇÃO(x) NO(in) OBJETO(pessoa) {execute este bloco}
+
+    inseriu-se no 1° placeholder: a CHAVE(x);
+    Foi exibido: a CHAVE de CADA PROPRIEDADE do OBJETO.
+    
+    PERCEBA: em OBJETOS, a CHAVE é o NOME dado à cada PROPRIEDADE (chave:valor == nome:valor).
+
+    inseriu-se no 2° placeholder: o OBJETO(pessoa) na POSIÇÃO de x;
+    Foi exibido: o VALOR de CADA PROPRIEDADE do OBJETO. 
+
+    txt += "<br><strong>*posição == índice == chave == key</strong>"
+
+    document.getElementById('demo').innerHTML = txt
+</script>
+</html>
+*/
+
