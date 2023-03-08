@@ -271,7 +271,7 @@ Ou seja, os NÚMEROS RETORNADOS só tem UM PROPÓSITO, saber se é: POSITIVO, NE
 
 *Eu OMITI TODOS os resultados NEGATIVOS porquê, além do fato de que iria ficar GIGANTESCO, quando isto acontece, NADA ACONTECE. Ilustração:  a(1) - b(5)  RETORNARÁ  -4 (negativo)  . POSICIONAR o  a  ANTES  do  b  não vai mudar nada, porque ele já está antes do  b  .
 
-*Para ORDENAR DECRESCENTEMENTE, basta mudar o código da função de  a - b  para  b - a  . Ilustração:  b(1) - a(5)  RETORNARÁ  -4 (negativo)  . Então o  a  será POSICIONADO ANTES de  b  .*/
+*Para ORDENAR DECRESCENTEMENTE, basta mudar o código da função de  a - b  para  b - a  . Ilustração:  b(1) - a(5)  RETORNARÁ  -4 (negativo)  . Então o  a  será POSICIONADO ANTES de  b  .
 
 ----------
 
