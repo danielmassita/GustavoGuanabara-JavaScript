@@ -1,8 +1,14 @@
 // Aula 16 - Funções - Curso JavaScript #16
 // https://youtu.be/mc3TKp2XzhI
 
-/* TRANSCRIÇÃO
+/* PERGUNTAS AULA ANTERIOR
+1) Conseguiu simplificar seus códigos usando array?
+2) Sabe colocar um array em ordem usando apenas uma chamada de função?
+3) Como disparar uma função simples quando apertamos um botão?
+4) Quer aprender mais sobre funções? 
+*/
 
+/* TRANSCRIÇÃO
 0:00
 Antes de começar esse vídeo, responda aquelas perguntas que geralmente a gente faz:
 0:04
