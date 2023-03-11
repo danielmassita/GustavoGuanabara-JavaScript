@@ -32,4 +32,34 @@ if (pos == -1){
 }
 console.log('')
 
-// FIM!
+// FIM CÓDIGO DANIEL!
+
+let array = ['b', 'p', 'c', 'a']
+array.sort()
+console.log("ORDENADO:", array)
+for (let x in array) {
+    console.log(`LETRA: ${array[x]} CÓDIGO: ${array[x].charCodeAt(0)}`)
+}
+
+array = ['b', 'P', 'c', 'a'] // No Unicode Table Decimal, o P vem antes do p. 
+array.sort()
+console.log("ORDENADO:", array)
+for (let x in array) {
+    console.log(`LETRA: ${array[x]} CÓDIGO: ${array[x].charCodeAt(0)}`)
+}
+
+var testeNumeros = [99, 25, 100]
+testeNumeros.sort()
+console.log("ORDENADO:", testeNumeros)
+for (let x in testeNumeros) {
+    console.log(`NÚMERO: ${testeNumeros[x]} CÓDIGO: ${String(testeNumeros[x]).charCodeAt(0)}`)
+}
+
+var testeNumeros = [9, 2, 1]
+testeNumeros.sort()
+console.log("ORDENADO:", testeNumeros)
+for (let x in testeNumeros) {
+    console.log(`NÚMERO: ${testeNumeros[x]} CÓDIGO: ${String(testeNumeros[x]).charCodeAt(0)}`)
+}
+
+// FIM CÓDIGO TREINOS LUCAS
