@@ -12,6 +12,41 @@
 3) Podemos usar um "listener" que fica aguardando (ou um while infinito no body html da página com onload(). até que um evento aconteça), no caso, um EVENTO onKeyDown ou onKeyUp. 
 4) Lógico! */
 
+/*
+`${Funções em JavaScript}`
+
+- Temos funções na nossa vida, conjunto de tarefas, rotinas, etc. 
+- EXEMPLO
+	MÃE te CHAMA, ENTREGA um DINHEIRO pra IR na MERCEARIA e COMPRAR LEITE. 
+	Você vai retornar a garrafa de LEITE e devolver eventualmente um TROCO.
+
+	- Por paralelismo do exemplo:
+	- quando sua mãe te chama, ela faz uma CHAMADA de função (ativa ou rotina ou gatilho, toda quarta-feira por ex.)...
+	- é necessário o dinheiro como entrada chamado de PARÂMETRO DE ENTRADA (faz parte da chamada)
+	- com o dinheiro, o processo de ir na loja, como, todo o processo é a AÇÃO (bloco de código que executa uma ação)...
+	- ao final, quando volta e entrega o leite pra mãe existe o RETORNO.
+
+CHAMADA, PARÂMETROS, AÇÃO, RETORNO (nem toda função usa sempre todos esses itens).
+
+- Definição técnica: "São AÇÕES executadas assim que são CHAMADAS ou em decorrência de algum EVENTO. Uma FUNÇÃO pode receber PARÂMETROS e retornar um RESULTADO."
+- No estudo do D.O.M., a gente usava funções quando clicávamos sobre um BOTÃO que disparava um evento (onclick) e executava uma ação. 
+
+function ação(parâmetro) {
+	[ bloco de ação e código ]
+	[ return [res] ]
+}
+
+ação(5) // Estou chamando a função "ação()" executando com o valor (5) que eu estou passando, se tornando o parâmetro. Ocorrerá o processamento do bloco de códigos e ao final vai return um resultado.
+
+ação() é a chamada...
+(5) é o parâmetro...
+
+//////////////////
+
+Vamos trabalhar com uma FUNCTION que fará uma checagem se um número é par ou ímpar...
+
+
+*/
 
 
 /* TRANSCRIÇÃO
