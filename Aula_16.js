@@ -230,6 +230,97 @@ const parimpar = (n) => {
   return n % 2 == 0 ? 'Par' : 'Ímpar';
 }
 console.log(parimpar(13));
+
+
+
+
+@LuuuKz1999
+há 2 meses (editado)
+NOVIDADES:
+
+    O que são FUNÇÕES no JavaScript?
+
+Funções são subprogramas que podem RECEBER PARÂMETROS e RETORNAR um RESULTADO. São AÇÕES executadas assim que são CHAMADAS ou em decorrência de algum EVENTO. É um BLOCO de CÓDIGOS projetado para EXECUTAR uma TAREFA ou CALCULAR um VALOR. Syntax:
+function nomeDaFunção (parâmetro1, parâmetro2, parâmetro3...) {bloco de códigos}
+
+    Diferença entre PARÂMETRO e ARGUMENTO:
+
+Parâmetros, ou PARÂMETROS FORMAIS, são VARIÁVEIS LOCAIS de uma FUNÇÃO. O VALOR DESTAS é definido na PASSAGEM dos ARGUMENTOS, na CHAMADA da FUNÇÃO.
+*Você pode NOMEAR os PARÂMETROS por questões ORGANIZACIONAIS, caso queira.
+
+Argumentos, ou PARÂMETROS REAIS, são os REAIS VALORES que serão PASSADOS como PARÂMETROS de uma FUNÇÃO.
+  Ex:
+function Boletim (nomeDoAluno, notaDoAluno) {bloco de códigos qualquer}
+
+  CHAMADA da FUNÇÃO e PASSAGEM dos ARGUMENTOS:
+Boletim("Rodolfo", 6.5)
+Passou-se o ARGUMENTO "Rodolfo" para o PARÂMETRO nomeDoAluno.
+Passou-se o ARGUMENTO  6.5  para o PARÂMETRO notaDoAluno.
+
+Parâmetro é o NOME do LOCAL que RECEBE os ARGUMENTOS.
+Argumentos são os REAIS VALORES que serão PASSADOS para este LOCAL.
+
+  Exemplos de FUNÇÕES e PARÂMETROS (rode este código (Node.js Exec)):*/
+
+// Exemplos de FUNÇÕES:
+function sayHello1() {
+    console.log("Hello")
+}
+// ESTA FUNÇÃO ACIMA: IMPRIME algo no console, NÃO TEM parâmetros e NÃO RETORNA nada.
+// A PROVA de que esta função NÃO RETORNA nada:
+let x = sayHello1()  //  x  RECEBE o RETORNO desta função.
+console.log(x) //  x  é:  undefined
+
+console.log('----------')
+
+function sayHello2() {
+    return "Hello"
+}
+// ESTA FUNÇÃO ACIMA: NÃO IMPRIME nada no console, NÃO TEM parâmetros e RETORNA algo.
+// A PROVA de que esta função RETORNA algo:
+let y = sayHello2() //  y  RECEBE o RETORNO desta função.
+console.log(y)  //  y  é:  Hello
+
+console.log('----------')
+
+function sayHelloTo(name) {
+    console.log(`Hello ${name}`)
+}
+// ESTA FUNÇÃO ACIMA: IMPRIME algo no console, TEM 1 parâmetro e NÃO RETORNA nada.
+sayHelloTo('Rodolfo') // passa-se o ARGUMENTO  Rodolfo  para o PARÂMETRO  name  .
+
+console.log('----------')
+
+function returnHiTo(name) {
+    return `Hi ${name}`
+}
+// ESTA FUNÇÃO ACIMA: NÃO IMPRIME nada no console, TEM 1 parâmetro e RETORNA algo.
+z = returnHiTo('Geroldo')
+console.log(z)
+
+console.log('------------------------------')
+
+// Exemplos de PARÂMETROS:
+function showParams(a, b, c) {
+    console.log(a, b, c)
+}
+showParams(1, 2, 3) // Exibiu-se os argumentos  1 2 3  , como esperado.
+showParams(1, 2, 3, 4, 5) // Exibiu-se os argumentos  1 2 3  e ignorou-se os excedentes que inexistem.
+showParams(1, 2) // Exibiu-se os argumentos  1 2  e o resto, não definido, retorna  undefined  .
+showParams(1) // ↑ Mesma lógica.
+showParams() // ↑ Mesma lógica.
+
+console.log('----------')
+
+function defaultParams (a, b=2, c=5) { // É possível definir PARÂMETROS PADRÕES, caso estes NÃO SEJAM PASSADOS.
+    console.log(a, b, c)
+}
+defaultParams(7, 8, 9) // Exibiu-se os argumentos  7 8 9  , como esperado.
+defaultParams(7, 8) // Exibiu-se os argumentos  7 8 e 5  , sendo este último o PARÂMETRO PADRÃO de  c  .
+defaultParams(7) // ↑ Mesma lógica.
+defaultParams() // ↑ Mesma lógica.
+
+
 */
 
 /* TRANSCRIÇÃO
