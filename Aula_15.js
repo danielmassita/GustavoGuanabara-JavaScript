@@ -978,4 +978,5 @@ a linguagem Javascript. Eu me despeço por aqui e no próximo vídeo a gente con
 32:45
 Um grande abraço, boas práticas e até a próxima!
 32:50
-Legendas:Tainá Bandeira*/
+Legendas:Tainá Bandeira
+*/
