@@ -41,13 +41,95 @@ ação(5) // Estou chamando a função "ação()" executando com o valor (5) que
 ação() é a chamada...
 (5) é o parâmetro...
 
-//////////////////
-
-Vamos trabalhar com uma FUNCTION que fará uma checagem se um número é par ou ímpar...
-
-
 */
 
+// Vamos trabalhar com uma FUNCTION que fará uma checagem se um número é par ou ímpar...
+
+function parimp(n){
+    if (n % 2 == 0) {
+        return 'par'
+    } else {
+        return 'ímpar'
+    }
+}
+
+// A função foi declarada, mas sem uma chamada nada acontece...
+// Para fazer a chamada, criei uma variável chamada res... 
+
+let res = parimp(11)
+console.log(res)
+
+// Fiz uma declaração de VAR e nela fiz a chamada da função parimp(11). O 11 é meu parâmetro, vou jogar dentro da função no lugar de "n", então n está valendo 11. Se 11 dividido por 2 resulta 5 e dá resto 1, então não é zero, saindo do if e pulando pro else, sendo então o return 'ímpar', que será ATRIBUÍDO à variável "res".
+
+/* MÃO NA MASSA funcao01.js */
+
+function parimpar(n){
+    if (n % 2 == 0) {
+        return 'Par!'
+    } else {
+        return 'Ímpar!'
+    }
+}
+
+parimpar(4) // Nada acontece... 
+
+let res = parimpar(4) 
+console.log(res) // Usando uma variável... 
+
+console.log(parimpar(223)) // Sem usar uma variável...
+
+/* MÃO NA MASSA funcao02.js */
+
+function soma(n1, n2) {
+    return (n1 + n2)
+}
+console.log(soma(2, 5)) // 2 e 5 são parâmetros e retornará o 7...
+console.log(soma(2)) // Não vai funcionar, pois n2 será UNDEFINED e retornará NaN (2 + undefined = NaN)...
+
+
+function soma2(n1=0, n2=0) { // Parâmetros opcionais pré-definidos com typeof == number...
+    return (n1 + n2)
+}
+console.log(soma2(7, 3)) 
+console.log(soma2(7))
+console.log(soma2(3))
+
+/* MÃO NA MASSA funcao03.js */
+// Vamos jogar uma função dentro de uma variável...
+let v = function(x) {
+    return (x * 2)
+}
+console.log(v(5))
+// Ou seja, eu passei pra minha variável 'v' um parâmetro e ele conseguiu executar uma função. Existe uma sintaxe chamada ARROW FUNCTION também (mas foge do escopo do curso básico). 
+
+/* MÃO NA MASSA funcao04.js */
+// Vamos calcular o FATORIAL de um número, no caso 5! = 5 * 4 * 3 * 2 * 1 = 120.
+
+function fatorial(n) {
+    let fat = 1
+    for (let c = n; c > 1; c--) {
+        fat *= c
+    }
+    return fat // se esquecer o return fat, o JS vai dar undefined...
+}
+console.log(fatorial(5)) 
+
+// Podemos usar uma EXPRESSÃO RECURSIVA
+// Estarei a criar uma função que dentro dela possui uma chamada pra ela mesma (se chamada RECURSIVIDADE, pouco aprofundado no curso básico)...
+
+// 5! = 5 * (4 * 3 * 2 * 1)
+// 5! = 5 * 4! 
+// n! = n * (n-1)
+// 1! = 1
+
+function fatorialRecursivo(n){
+    if (n == 1) {
+        return 1
+    } else {
+        return n * fatorialRecursivo(n-1)
+    }
+}
+console.log(fatorialRecursivo(5))
 
 /* TRANSCRIÇÃO
 0:00
