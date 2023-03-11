@@ -6,7 +6,13 @@
 2) Sabe colocar um array em ordem usando apenas uma chamada de função?
 3) Como disparar uma função simples quando apertamos um botão?
 4) Quer aprender mais sobre funções? 
-*/
+
+1) Sim, usando variáveis compostas com um par chave-valor.
+2) nomeDoArray.sort() - Porém, o método .sort() vai retornar Unicode Decimal Table, ou seja, Maiúsculas antes de Minúsculas e Números na primeira casa decimal. Podemos usar uma função posteriormente pra ordenar em "crescente/decrescente" de verdade.
+3) Podemos usar um "listener" que fica aguardando (ou um while infinito no body html da página com onload(). até que um evento aconteça), no caso, um EVENTO onKeyDown ou onKeyUp. 
+4) Lógico! */
+
+
 
 /* TRANSCRIÇÃO
 0:00
