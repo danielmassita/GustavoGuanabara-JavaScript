@@ -63,3 +63,62 @@ for (let x in testeNumeros) {
 }
 
 // FIM CÓDIGO TREINOS LUCAS
+
+// Exemplos de FUNÇÕES:
+function sayHello1() {
+    console.log("Hello")
+}
+// ESTA FUNÇÃO ACIMA: IMPRIME algo no console, NÃO TEM parâmetros e NÃO RETORNA nada.
+// A PROVA de que esta função NÃO RETORNA nada:
+let x = sayHello1()  //  x  RECEBE o RETORNO desta função.
+console.log(x) //  x  é:  undefined
+
+console.log('----------')
+
+function sayHello2() {
+    return "Hello"
+}
+// ESTA FUNÇÃO ACIMA: NÃO IMPRIME nada no console, NÃO TEM parâmetros e RETORNA algo.
+// A PROVA de que esta função RETORNA algo:
+let y = sayHello2() //  y  RECEBE o RETORNO desta função.
+console.log(y)  //  y  é:  Hello
+
+console.log('----------')
+
+function sayHelloTo(name) {
+    console.log(`Hello ${name}`)
+}
+// ESTA FUNÇÃO ACIMA: IMPRIME algo no console, TEM 1 parâmetro e NÃO RETORNA nada.
+sayHelloTo('Rodolfo') // passa-se o ARGUMENTO  Rodolfo  para o PARÂMETRO  name  .
+
+console.log('----------')
+
+function returnHiTo(name) {
+    return `Hi ${name}`
+}
+// ESTA FUNÇÃO ACIMA: NÃO IMPRIME nada no console, TEM 1 parâmetro e RETORNA algo.
+z = returnHiTo('Geroldo')
+console.log(z)
+
+console.log('------------------------------')
+
+// Exemplos de PARÂMETROS:
+function showParams(a, b, c) {
+    console.log(a, b, c)
+}
+showParams(1, 2, 3) // Exibiu-se os argumentos  1 2 3  , como esperado.
+showParams(1, 2, 3, 4, 5) // Exibiu-se os argumentos  1 2 3  e ignorou-se os excedentes que inexistem.
+showParams(1, 2) // Exibiu-se os argumentos  1 2  e o resto, não definido, retorna  undefined  .
+showParams(1) // ↑ Mesma lógica.
+showParams() // ↑ Mesma lógica.
+
+console.log('----------')
+
+function defaultParams (a, b=2, c=5) { // É possível definir PARÂMETROS PADRÕES, caso estes NÃO SEJAM PASSADOS.
+    console.log(a, b, c)
+}
+defaultParams(7, 8, 9) // Exibiu-se os argumentos  7 8 9  , como esperado.
+defaultParams(7, 8) // Exibiu-se os argumentos  7 8 e 5  , sendo este último o PARÂMETRO PADRÃO de  c  .
+defaultParams(7) // ↑ Mesma lógica.
+defaultParams() // ↑ Mesma lógica.
+
