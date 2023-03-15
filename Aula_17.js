@@ -15,6 +15,39 @@ PERGUNTAS DA AULA ANTERIOR
 */
 
 /*
+Aula 17 - PRÓXIMOS PASSOS
+
+- Agradecimentos...
+- Até agora já aprendemos:
+    Fundamentos da Linguagem (o que é; como surgiu; evolução; paradigma client-side; node.js e servidores (server-side))
+    Variáveis e Dados (tipos de dados; como colocar dados numa variável; como o JS trata os tipos primitivos;)
+    Operadores (como tratar os valores com operações; op. aritméticos; op. lógicos; op. relacionais;)
+    Condições (if simples; if composto; if aninhado; switch-case;)
+    Repetições (while; do..while; for;)
+    Arrays (variáveis compostas; com índice numérico;)
+    Functions (MUITO importante no JS, linguagem multi-paradigma e funciona também com PARADIGMA FUNCIONAL)
+    DOM (Document Object Model - componentes visuais; dados formulários; alterou/manipulou; JS falou com HTML/CSS)
+- Rodamos no Node.JS na própria máquina, usando o V8 da engine do Google Chrome navegador, e rodando no cliente usando o DOM (html).
+
+E agora? Quais são os DEVERES DE CASA? 
+- Faça curso HTML5/CSS! https://www.youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o
+- Faça curso de Lógica da Programação! https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV
+- Faça curso de Python! https://www.youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6
+
+... DAQUI PARA FRENTE!
+- Functions (outros conceitos como Arrow Function, Callbacks, Funções Anônimas, IIFE, conhecer JS Funcional)
+- Objetos (POO, linguagem orientada a objetos, declarar objetos)
+- Modularização (código separado em arquivos separados, reutilizar códigos usando JS)
+- RegEx (Regular Expressions, para validação de dados)
+- JSON (conjunto estrutura de objeto, transmitir dados e salvar dados localmente)
+- AJAX (tecnologia que usa JS, como rolagem infinita)
+- Node.JS (pra fazer scripts rodarem no servidor com grande potencial)
+- Bibliotecas X Frameworks (jQuery, VueJS, Angular)
+*/
+
+
+
+/*
 TRANSCRIÇÃO
 0:00
 Último vídeo do curso básico de JavaScript ,não se engane esse vídeo não é só uma despedida ele tem
