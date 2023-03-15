@@ -3,6 +3,15 @@
 
 /*
 PERGUNTAS DA AULA ANTERIOR
+1) Você assistiu ao curso completo? 
+2) Você fez todos os exercícios propostos?
+3) Você já tentou resolver os exercícios sem a ajuda do vídeo?
+4) Você já criou uma situação qualquer e tentou resolver por conta própria? 
+
+1) Sim.
+2) Sim, junto com o Gustavo.
+3) Ainda não (03/2023), vou começar uma nova rodada de exercícios como revisão e depois tentarei refazê-los por conta.
+4) Alguns exercícios do CodingBat (Python), e fazendo um plano de treino com BeeCrowd, LeetCode, HackerRank, GeeksForGeeks.
 */
 
 /*
