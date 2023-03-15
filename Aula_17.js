@@ -45,6 +45,61 @@ E agora? Quais são os DEVERES DE CASA?
 - Bibliotecas X Frameworks (jQuery, VueJS, Angular)
 */
 
+/* INTRODUÇÃO A OBJETOS!
+Relembrando algumas aulas anteriores... 
+
+Arrays || Vetor || Variável Composta
+
+let num = [                         ]
+let num = [         ,        ,      ]
+              0           1       2
+
+// O array no JS é heterogêneo, aceita valores de typeOf diferentes (string, number, lógico)...
+// O problema é que o índice é fixo, então começa a limitar o array...
+
+OBJETO
+
+let amigo = {}
+let amigo = {                               }
+let amigo = {         ,       ,     ,       }
+
+let amigo = {nome:'José', sexo:'M', peso:85.4, engordar(p){} }
+//  valor         'José'      'M'      85.4     [function]
+//  chave         nome:     sexo:    peso:       engordar()                
+//
+
+// Criando um último item "engordar(p){}" que é uma function, então um OBJETO PODE GUARDAR FUNCIONALIDADE, que chamamos de MÉTODO.
+// Objetos são VARIÁVEIS que guardam valores que são os atributos, objetos podem guardar também funcionalidades (chamamos de MÉTODOS).
+*/
+
+/* Mão na Massa (VS Code) - objeto01.js */
+
+console.log('-----')
+let amigo = {} // No JS array [] e object {} são estruturas da mesma classe...
+console.log(typeof(amigo))
+
+amigo = {nome: 'José', sexo: 'M', peso: 85.4, engordar(p){}}
+
+amigo = {
+    nome: 'José',
+    sexo: 'M',
+    peso: 85.4,
+    engordar(p=0){
+        console.log('Engordou!')
+        this.peso += p
+    }
+}
+
+console.log(amigo)
+// Podemos acessar os elementos de forma separada...
+
+console.log('-----')
+console.log(`Vamos acessar o primeiro elemento/chave que é ${amigo.nome}.`) // amigo.nome é o ATRIBUTO
+console.log(`O ${amigo.nome}, que é do sexo ${amigo.sexo}, pesa ${amigo.peso} kg.`)
+
+console.log('-----')
+amigo.engordar(2); // A variável "amigo" tem uma função dentro dela (funcionalidade) então função dentro de variável é uma evolução...
+console.log(`O ${amigo.nome}, que é do sexo ${amigo.sexo}, pesa ${amigo.peso} kg.`)
 
 
 /*
