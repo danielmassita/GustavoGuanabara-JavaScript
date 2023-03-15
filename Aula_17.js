@@ -102,6 +102,549 @@ amigo.engordar(2); // A variável "amigo" tem uma função dentro dela (funciona
 console.log(`O ${amigo.nome}, que é do sexo ${amigo.sexo}, pesa ${amigo.peso} kg.`)
 
 
+/* LUCAS LEAL
+
+
+Lucas Leal
+há 2 meses (editado)
+NOVIDADES: (leia também comentários deste post)
+
+    O que estudar?
+  Functions:
+Arrow Functions 
+Callbacks
+Funções Anônimas
+iife
+JavaScript Funcional
+-----
+Objetos (orientação a objetos)
+Modularização
+RegEx (Regular Expressions)
+JSON
+AJAX
+NodeJS
+____________________________
+
+  O que é um Object?
+OBJECTS são CONTAINERS de PROPRIEDADES e MÉTODOS.
+OBJECTS são VARIÁVEIS COMPOSTAS, assim como os ARRAYS.
+
+  Array syntax:
+let identificador = [valor, valor, valor]
+                                     0        1        2
+  Object syntax:
+let identificador = {nome:valor, nome:valor, nome:valor}
+
+  Diferenças:
+Para declarar um ARRAY usa-se COLCHETES [ ]
+Para declarar um OBJECT usa-se CHAVES { }
+________
+
+Nos ARRAYS, os ELEMENTOS (conjunção de: posição e valor) são ACESSADOS por seus ÍNDICES (0, 1, 2).
+
+Nos OBJECTS, as PROPRIEDADES (conjunção de: nome e valor) são ACESSADAS por suas KEYS (nome1, nome2, nome3).
+
+  Como fazer este ACESSO (rode este código):
+
+const pessoas = {nome1: "rodolfo", nome2: "rogerin"} 
+const idades = [20, 35]
+
+// Há 2 maneiras de acessar as PROPRIEDADES de um OBJETO.
+
+// 1) syntax: objectName.propertyName
+console.log(`O ${pessoas.nome1} tem 20 anos de idade e o ${pessoas.nome2} têm 35.`)
+// 2) syntax: objectName["propertyName"]
+console.log(`O ${pessoas["nome1"]} tem 20 anos de idade e o ${pessoas["nome2"]} têm 35.`)
+// acessando os ELEMENTOS de um ARRAY através de seus ÍNDICES:
+console.log(`O rodolfo tem ${idades[0]} anos de idade e o rogerin têm ${idades[1]}.`)
+
+/* pessoas  é um OBJETO;  
+nome1 e nome2  são as PROPRIEDADES do OBJETO  pessoas;
+"rodolfo" e "rogerin"  são os VALORES das PROPRIEDADES  nome1 e nome2  , respectivamente. 
+________
+
+Os OBJETOS podem também ter MÉTODOS.
+Um MÉTODO é uma FUNÇÃO que é ARMAZENADA como PROPRIEDADE de um OBJETO. Ou seja, MÉTODOS são AÇÕES que podem ser EXECUTADAS em OBJETOS.
+
+  Exemplo (rode este código):
+
+const person = {
+    fName: "Elon",
+    lName: "Musk",
+    fullName() {
+        return `${this.fName} ${this.lName}`
+    }
+}
+console.log(person.fullName())
+
+/*  this  é uma keyword que refere-se a um OBJETO. 
+Portanto,  this.fName  refere-se à propriedade  fName  DESTE (this) OBJETO (person). 
+________
+
+  O que é  this  ?
+
+this  é uma keyword que refere-se a um OBJETO.  this  NÃO É uma VARIÁVEL. Você NÃO PODE MUDAR o VALOR de  this  .
+Mas QUAL objeto  this  refere-se? Isto dependerá de COMO esta keyword foi utilizada ou chamada:
+
+Em um MÉTODO,  this  refere-se ao OBJETO (exemplo anterior).
+Sozinha,  this  refere-se ao OBJETO GLOBAL.
+Em uma FUNÇÃO,  this  refere-se ao OBJETO GLOBAL.
+Em uma FUNÇÃO, em modo estrito (*strict mode),  this  é undefined.
+Em um EVENTO,  this  refere-se ao ELEMENTO que RECEBEU o EVENTO.
+Métodos como  call(),  apply()  e  bind()  , podem referir  this  a QUALQUER OBJETO.
+
+  *O que é Strict Mode?
+
+O comando:  "use strict"  , indica que um código DEVE SER EXECUTADO em Strict Mode, modo estrito. Este pode ser utilizado no INÍCIO do SCRIPT, agindo GLOBALMENTE, ou DENTRO de uma FUNÇÃO ESPECÍFICA, agindo LOCALMENTE.
+Este modo serve para REVELAR MÁS PRÁTICAS de ESCRITA, SYNTAX, ao lançar NOVAS MENSAGENS de ERRO no CONSOLE do NAVEGADOR, que antes passariam desapercebidas. Portanto, este modo auxilia na escrita de um código mais "clean", previnindo que você atribua um valor à uma variável antes de declará-la, por exemplo (rode este código):
+ 
+// SEM UTILIZAR o Strict Mode:
+function serHumano() {
+    return nome = "rodolfo" // atribuindo um valor à uma variável SEM DECLARÁ-LA. 
+}
+console.log(serHumano()) // "rodolfo" foi exibido normalmente sem mensagens de erro.
+
+console.log('-------')
+
+// UTILIZANDO o Strict Mode:
+function pessoa() {
+    "use strict"  // caso APAGUE este "use strict", o código NÃO DARÁ ERRO, mesmo que este exista.
+    return sobrenome = "da Silva"  // atribuindo um valor à uma variável SEM DECLARÁ-LA. 
+}
+console.log(pessoa()) // ReferenceError: sobrenome is not defined
+
+// Para saber mais, Google: "JavaScript Use Strict"
+
+O que são Arrow Functions?
+
+Arrow Functions são FUNÇÕES que possuem uma SYNTAX MENOR, mais ENXUTA, devido ao fato de alguns comandos poderem ser OMITIDOS. Estas são SEMPRE FUNÇÕES ANÔNIMAS (funções sem um nome). Ex (rode este código (Node.js Exec)):
+
+// Escrito do modo:  function  :
+function myFunction1 (a, b) {return a * b} // "myFunction1" é o NOME da FUNÇÃO.
+console.log(myFunction1(5, 3))
+
+console.log('----------')
+
+// Escrito do modo:  Arrow Function  :
+//      PARÂMETROS  ↓         ↓  CÓDIGOS
+let myFunction2 = (a, b) => a * b // "myFunction2" é o NOME da VARIÁVEL que RECEBE a Arrow Function (que é anônima). *Apropósito, este ato de ATRIBUIR uma FUNÇÃO à uma VARIÁVEL chama-se:  Function Expression  .
+console.log(myFunction2(5, 3))
+
+/* PERCEBA QUE, na Arrow Function:
+A KEYWORD  function  é OMITIDA;
+O NOME da FUNÇÃO NÃO EXISTE (anônima);
+As  CHAVES { }  e a KEYWORD  return  são OMITIDAS (estes só funcionam quando há apenas 1 statement 'retornável'). 
+
+console.log('----------')
+
+// Caso a Arrow Function tenha apenas 1 PARÂMETRO, os  PARÊNTESES ( )  TAMBÉM podem ser OMITIDOS. Ex:
+//     PARÂMETRO  ↓
+let myFunction3 = n => n + 2
+console.log(myFunction3(5))
+
+
+O que é Callback Function?
+
+Callback Function é uma FUNÇÃO que é PASSADA como ARGUMENTO de OUTRA FUNÇÃO. Ex (rode este código (Live Server)):
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+    <h2>Callback Function</h2>
+
+    <p>O RESULTADO da soma é:</p>
+    <p id="demo"></p>
+
+    <script>
+    function tela(algo) { // 4) O ARGUMENTO  soma  é PASSADO para o PARÂMETRO  algo  , que então é IGUALADO ao  innerHTML  do elemento  p#demo  , exibindo o RESULTADO na tela.
+      document.getElementById("demo").innerHTML = algo
+    }
+
+    let calculadora = (num1, num2, callback) => { // 2) O ARGUMENTO  tela  foi PASSADO PARA o PARÂMETRO  callback  .
+      let soma = num1 + num2
+      callback(soma) // 3) Chamou-se a FUNÇÃO  callback()  PASSANDO o ARGUMENTO  soma (que é: 10)  . 
+    } // 3.1) Isto é o MESMO que: chamar a FUNÇÃO  tela(algo)  e PASSAR o ARGUMENTO  10  para o PARÂMETRO  algo  .
+    //   3.2) OBSERVE: FUNÇÃO callback() == PARÂMETRO callback == FUNÇÃO tela()  .
+
+    calculadora(5, 5, tela) // 1) a FUNÇÃO  tela  foi PASSADA COMO ARGUMENTO da FUNÇÃO  calculadora  . Portanto  tela  é a Callback Function. ATENTE-SE: ela foi PASSADA COMO ARGUMENTO, porém NÃO PASSOU ARGUMENTO ALGUM AINDA (explicado no  passo 3  ).
+    </script>
+
+    </body>
+    </html>
+
+
+O que é IIFE?
+
+IIFE, Immediately Invoked Function Expression, também conhecido como Self-Executing Anonymous Function, é uma função que, assim que DEFINIDA, é IMEDIATAMENTE EXECUTADA. Uma característica de funções IIFE é ter um Escopo Lexical (Lexical Scope). Ex (rode este código (Node.js Exec)):
+
+// Exemplo 1 (imprimindo "Olá Mundo"):
+    (function () {console.log("Olá Mundo")})()
+/* ¹↑       ²↑                            ¹↑ ↑³
+¹ - A função é ENCAPSULADA entre PARÊNTESES, o que promove um Escopo Lexical (explicado mais para frente).
+² - A função é ANÔNIMA, ou seja, NÃO TEM um NOME.
+³ - A função CHAMA ELA PRÓPRIA. */
+
+// Exemplo 1.1 (Versão Arrow Function):
+;(() => {console.log("Olá Mundo")})()
+
+console.log('----------')
+
+// Exemplo 2 (somando 3 números):
+    ;(function (a, b, c) {console.log(`Resultado: ${a + b + c}`)})(2, 5, 3)
+/* ¹↑             ²↑                                                 ³↑
+¹ - É uma boa prática, SEMPRE que CRIAR uma FUNÇÃO IIFE, colocar um  ;  no início. Caso RETIRE o  ;  , o código dará este ERRO:
+TypeError: console.log(...) is not a function (referindo-se ao  Exemplo 1.1  )
+Devido ao fato da função IIFE começar ABRINDO parênteses, o JavaScript interpretará que você está PASSANDO ARGUMENTOS para o  Exemplo 1.1  (por isso: "is not a function"). Ou seja, ele tratará o  Exemplo 2  como uma CONTINUAÇÃO do  Exemplo 1.1  , dado que NÃO HÁ NADA SEPARANDO-OS. É como se os 2 códigos estivessem um ao lado do outro. O  ;  serve para SEPARAR um STATEMENT do OUTRO, resolvendo este problema.
+² - Criação dos PARÂMETROS.
+³ - Passagem dos ARGUMENTOS. */
+
+console.log('----------')
+
+/* O que é Escopo Lexical (Lexical Scope)?
+Escopo Lexical, ou Escopo Léxico, é um escopo "mais ou menos" local. Ex: */
+
+const externo = () => {
+    const livro = 'Sapiens' // 1)
+    // console.log(livro.toUpperCase()) // 3)
+    const interno = () => {
+        // const livro = 'Bíblia' // 2)
+        console.log(livro.toUpperCase()) // 1.1)
+    }
+    interno()
+}
+externo()
+/* Ja é sabido que variáveis declaradas DENTRO de uma FUNÇÃO têm ESCOPO LOCAL. Entretanto, no ESCOPO LÉXICAL:
+1)   Uma VARIÁVEL (livro) declarada DENTRO de uma FUNÇÃO (externo)
+1.1) PODE ser ACESSADA por uma FUNÇÃO ANINHADA (interno)
+(press f8): "SAPIENS" é exibido no console.
+
+2) RETIRE ESTE COMENTÁRIO. Observe: esta DECLARAÇÃO será PRIORIZADA, pois a função  interno()  irá, PRIMEIRAMENTE, buscar a variável  livro  DENTRO de SEU BLOCO DE CÓDIGOS.
+(press f8): "BÍBLIA" é exibido no console.
+
+3) RETIRE ESTE COMENTÁRIO E O COMENTÁRIO  2)  . Observe: devido ao ESCOPO LOCAL das FUNÇÕES, ambas serão tratadas como variáveis DIFERENTES e serão exibidas INDIVIDUALMENTE, mesmo tendo o MESMO NOME. 
+(press f8): "SAPIENS" e "BÍBLIA" são exibidos no console. */ 
+
+console.log('----------')
+console.log('----------')
+
+/* Por isso Escopo Lexical é "mais ou menos" local, tudo depende das circunstâncias. Se a FUNÇÃO ANINHADA BUSCAR a VARIÁVEL dentro do SEU BLOCO DE CÓDIGOS e ENCONTRA-LA, ela atuará com escopo LOCAL. SENÃO ENCONTRAR, ela atuará com escopo LEXICAL, BUSCANDO-A no ESCOPO ACIMA. Caso não encontre também neste escopo, BUSCARÁ-SE no ESCOPO ACIMA DESTE, e assim em diante. Ex: */
+
+const Externo = () => {
+    const Livro = 'Sapiens' // 3)
+
+    const Interno = () => {
+        const Livro = 'Bíblia' // 2)
+
+    const maisInterno = () => {
+        console.log(Livro.toUpperCase()) // 1)
+    }
+    maisInterno()
+    }
+    Interno()
+}
+Externo()
+
+/* 
+1) A função  maisInterno()  NÃO TEM a variável  Livro  dentro de seu bloco de códigos.  
+2) Portanto ela atuará com escopo LEXICAL, buscando-a dentro da função  Interno()  , acima dela. Exibe-se "BÍBLIA".
+3) Caso você torne o  2)  um comentário, ela buscará a variável dentro de  Externo()  . Exibe-se "SAPIENS". */
+
+/*
+EXTRAS:
+
+  Quando devo usar o  ;  (ponto e vírgula)?
+
+Se há 2 ou mais DECLARAÇÕES (STATEMENTS) em uma MESMA LINHA, é OBRIGATÓRIO utilizar o  ;  para separá-las uma das outras. Exemplo (rode este código (Node.js Exec)):
+
+const numbers = [1, 2, 3, 4, 5];  // este  ;  é OPCIONAL
+for (let i = 0; i < numbers.length; i++) { // estes  ;  são OBRIGATÓRIOS para separar as declarações
+    console.log(numbers[i]);  // este  ;  é OPCIONAL
+}
+
+// Não há mais NENHUM outro uso obrigatório do  ;  no JavaScript.
+________
+
+  O que faz o método  split()  ?
+
+O método  split()  permite você DESMEMBRAR/DIVIDIR uma STRING, transformando-a em um ARRAY de SUBSTRINGS. Este método retorna um NOVO ARRAY. Este método NÃO ALTERA a STRING ORIGINAL. Syntax:
+string.split(separator, limit)
+
+Exemplo (rode este código (Node.js Exec)):
+
+let text = "Você está estudando JavaScript."
+
+const intoArray1 = text.split(" ")
+console.log(intoArray1) //     ↑ Use este separador para DIVIDIR a STRING em PALAVRAS.
+
+const intoArray2 = text.split("")
+console.log(intoArray2) //     ↑ Use este separador para DIVIDIR a STRING em CARACTERES.
+
+const intoArray3 = text.split("", 9)
+console.log(intoArray3) //        ↑ Use este parâmetro para LIMITAR a QUANTIDADE de DIVISÕES.
+________
+
+  O que faz o método  replace()  ?
+
+O método  replace()  faz uma BUSCA em uma STRING por um VALOR, ou uma EXPRESSÃO REGULAR, e RETORNA uma NOVA STRING com o valor SUBSTITUÍDO. Este método NÃO ALTERA a STRING ORIGINAL. Syntax:
+string.replace(searchValue, newValue)
+
+Exemplo (rode este código (Node.js Exec)):
+
+let texto = "Caneta azul, azul caneta, caneta azul, tá marcada com minha letra."
+console.log(texto)
+console.log('')
+
+console.log('1)')
+let resultado = texto.replace("azul", "vermelha") // 1) Substitui APENAS a PRIMEIRA aparição de "azul" para "vermelha"
+console.log('-- trocou ↓ ----- ↓ NÃO trocou ------ ↓ NÃO trocou')
+console.log(resultado)
+
+console.log('2)')
+resultado = texto.replace(/azul/g, "vermelha") // 2) Substitui TODAS as aparições de "azul" para "vermelha"
+// "g" significa: "global modifier". Mas este "global" é APENAS DENTRO da STRING a ser MODIFICADA (texto)
+console.log('-- trocou ↓ ------- ↓ trocou -------------- ↓ trocou')
+console.log(resultado)
+
+console.log('3)')
+resultado = texto.replace("caneta", "lápis") // 3) Este método é CASE-SENSETIVE, ou seja, ele DIFERENCIA letra MAIÚSCULA de MINÚSCULA
+console.log('- ↓ NÃO trocou ---- ↓ trocou')
+console.log(resultado)
+
+console.log('4)')
+
+resultado = texto.replace(/caneta/gi, "lápis") // 4) Mas, escrito DESTA FORMA, é possível torná-lo CASE-INSENSETIVE
+// "i" significa: "case-insensitive". 
+console.log('- ↓ trocou ------- ↓ trocou')
+console.log(resultado)
+
+console.log('5)')
+resultado = texto.replace(/caneta|marcada|letra/gi, "xxxxx") // 5) É possível substituir VÁRIOS TEXTOS de UMA VEZ SÓ
+console.log('- ↓ trocou ------- ↓ trocou ------------ ↓ trocou ------ ↓ trocou')
+console.log(resultado)
+console.log('------------------------- ↑ trocou')
+________
+
+  Operador de Coalescência Nula (Nullish Coalescing Operator) - retorna a expressão da DIREITA caso a expressão da ESQUERDA seja  undefined  ou  null  . Caso a expressão da ESQUERDA seja DEFINIDA, ESTA será retornada. 
+Syntax: leftExpr ?? rightExpr
+
+É MUITO semelhante ao Operador Lógico OR. A diferença é:
+O Operador OR retorna o 1° valor VERDADEIRO. 
+o Operador de Coalescência Nula retorna o 1° valor DEFINIDO.
+
+  Exemplo (rode este código (Node.js Exec)):
+
+let gols = 0
+
+QTDgols = gols || '"ERRO: nenhum gol cadastrado"'  // 1)
+console.log(`Marrocos venceu a Espanha por 4 x ${QTDgols}`)
+
+console.log('')
+
+QTDgols = gols ?? '"ERRO: nenhum gol cadastrado"'  // 2)
+console.log(`Marrocos venceu a Espanha por 4 x ${QTDgols}`)
+
+// 1) Neste caso, utilizando o OR, o número  0  foi tratado como FALSO e, portanto, a expressão da DIREITA foi retornada: Marrocos venceu a Espanha por 4 x "ERRO: nenhum gol cadastrado" 
+// Porém,  0  , é um número de gols TOTALMENTE VÁLIDO e POSSÍVEL de se acontecer e queremos que este seja exibido. Para fazer isto pode-se usar o Operador de Coalescência Nula, substituindo o  ||  por  ??  .
+
+// 2) Desta forma, utilizando Operador de Coalescência Nula, ao invés de retornar-se o 1° valor VERDADEIRO, retorna-se o 1° valor DEFINIDO. Então o novo valor retornado será: Marrocos venceu a Espanha por 4 x 0
+
+/* Todas expressões que o operador OR trata como FALSO:
+null;
+NaN;
+0;
+empty value (" " or ' ' or ` `);
+undefined. 
+________
+
+  Operador de Encadeamento Opcional (Optional Chaining Operator) - retorna  undefined  caso a PROPRIEDADE do OBJETO acessado seja  undefined  ou  null  .
+Syntax: ?.
+
+  Exemplo (rode este código (Node.js Exec)):
+
+const carro = {marca:"Fiat", modelo:"500", cor: null};
+
+console.log(carro?.tipo)  // não existe a propriedade: tipo
+console.log(carro?.cor)   // a propriedade cor recebeu  null
+________
+
+  O que fazem os métodos  Math.floor()  e  Math.random()  ?
+
+O método  Math.floor()  ARREDONDA um número, inserido como parâmetro, para MENOS (floor/chão).
+O método  Math.random()  retorna um número entre 0 (incluído) e 1 (não-incluído).
+
+Exemplo (rode este código (Node.js Exec)):
+
+const numbers = []
+
+for (let c = 0; c < 5; c++) {
+    numbers[c] = Math.random() // numbers  recebe 5 números aleatórios entre 0 e 1.
+    console.log(numbers[c])    // exibe-se cada um dos números na tela.
+}
+
+console.log('')
+
+for (let c = 0; c < 5; c++) {
+    numbers[c] = numbers[c] * 10 // Para explicar o Math.floor, multipliquei cada número do array por 10.
+    console.log(numbers[c])      // exibe-se cada um dos números na tela.
+}  
+
+console.log('')
+
+for (let c in numbers) {
+    console.log(Math.floor(numbers[c])) // O método Math.floor() ARREDONDA para MENOS cada número do array, transformando-os em números inteiros, e exibe-se cada um dos números na tela.
+} 
+
+console.log('----------EXTRA:----------')
+
+// Esta função gera um NÚMERO ALEATÓRIO entre um RANGE MÍNIMO e MÁXIMO (é meio complicadinho de entender, mas acho que consegui explicar xD).
+
+function getRndInteger (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min
+} //                                   ¹↑    ²↑          ³↑   
+console.log(getRndInteger(15, 20))
+
+/* A função foi chamada passando os argumentos 15(min) e 20(max). 
+
+Para chegar no resultado esta função gera, na verdade, um número aleatório ENTRE a DIFERENÇA do MÍNIMO e o MÁXIMO. É o que faz as setinhas ¹ e ², subtraindo max(20) por min(15). Ou seja, a distância entre 15 e 20 é: 5. Depois soma-se +1 para que o número 20 também esteja incluído na probabilidade de ser gerado pois, caso contrário, seria gerado um número entre 15 e 19.
+
+Então, neste exemplo: Math.random() * (max - min + 1) gerará um número aleatório entre 0 (incluso) e 6 (não-incluso). Ou seja, entre 0 e 5.
+
+Com o número gerado, o método Math.floor() ARREDONDARÁ este número para MENOS. 
+
+E depois este número será somado com o range mínimo(15), setinha ³, exibindo na tela um número aleatório entre 15 e 20 (ambos inclusos).
+
+Descrevendo passo a passo:
+
+/* min=15; max=20.
+Math.random gera 0.38
+max(20) - min(15) + 1 = 6
+6 * 0.38 = 2.28
+Math.floor arredondará para 2
+Este 2 será somado com min(15)
+resultado: 17 */
+
+
+// O que é Spread Operator (...) ?
+
+// O Operador Spread (...) permite-nos COPIAR ELEMENTOS de um PRIMEIRO ARRAY para um SEGUNDO ARRAY ou COPIAR PROPRIEDADES e MÉTODOS de um PRIMEIRO OBJETO para um SEGUNDO OBJETO. Exemplo (rode este código (Node.js Exec)):
+
+// O Spread Operator ESPALHA os VALORES de um ARRAY ou OBJETO. Ex:
+const array_1 = [2, 3, 4]
+const array_2 = [1, ...array_1, 5, 6]
+console.log(array_2)
+
+console.log(`Espalhou-se os VALORES  ${array_1}  dentro do  array_2`)
+
+console.log('--------------------')
+
+// É possível também PASSAR ARGUMENTOS para uma FUNÇÃO utilizando o Spread Operator:
+let somar = (a, b, c) => {return a + b + c} // a = 2; b = 3; c = 4.
+console.log(`Resultado: ${somar(...array_1)}`)
+
+console.log('--------------------')
+
+// O Spread Operator permite-nos também fazer uma CÓPIA RASA (Shallow Copy) de um OBJETO ou ARRAY. Cópia Rasa significa: COPIAR APENAS as PROPRIEDADES que estão na CAMADA MAIS SUPERFICIAL do OBJETO ou ARRAY. Ou seja, não incluí-se OUTROS OBJETOS nem ARRAYS, pois estes possuem OUTRA CAMADA de ANINHAMENTO. Ex:
+
+const bill =  {
+    idade: 11,                // {CAMADA MAIS SUPERFICIAL}
+    brinquedos: {             // {OUTRO OBJETO COM
+        favorito: 'Bola',     // PROPRIEDADES
+        menosUsado: 'Girafa'  // ANINHADAS}
+    }
+}
+
+const apollo = {...bill}
+// const apollo = {...bill, brinquedos: {...bill.brinquedos}} // * ignore isto por enquanto.
+
+bill.idade = 14 
+
+console.log(`Idade de Bill: ${bill.idade}`)
+console.log(`Idade de Apollo: ${apollo.idade}`)
+
+/* linha 26:  apollo  RECEBE uma CÓPIA do OBJETO  bill 
+linha 29: alterou-se o VALOR da PROPRIEDADE  bill.idade  para  14
+linha 31 e 32: exibe-se a idade de cada um. Os valores são DIFERENTES. Tudo certo, é o que queríamos. Isto significa que a PROPRIEDADE  idade  de  bill  e  apollo  são PROPRIEDADES DIFERENTES, ou seja, cada uma tem o seu PRÓPRIO ESPAÇO alocado na MEMÓRIA. Veja a comparação lógica: */ 
+
+console.log(`Sâo iguais? ${bill.idade === apollo.idade}`) // VALOR e TIPO iguais? 
+
+console.log('--------------------')
+
+// Agora vamos testar o OBJETO  brinquedos  , que têm PROPRIEDADES ANINHADAS:
+
+bill.brinquedos.favorito = 'Tubarão'
+
+console.log(`Brinquedo favorito de Bill: ${bill.brinquedos.favorito}`)
+console.log(`Brinquedo favorito de Apollo: ${apollo.brinquedos.favorito}`)
+
+/* linha 44: alterou-se o VALOR da PROPRIEDADE  bill.brinquedos.favorito  para  'Tubarão'
+linha 46 e 47: exibe-se o nome do brinquedo favorito de cada um. Os valores são IGUAIS. Não é o que queríamos que acontecesse. Isto ocorreu porque o Spread Operator COPIOU apenas a CAMADA de ANINHAMENTO mais SUPERFICIAL do OBJETO (onde está a propriedade  idade  ). As PROPRIEDADES do OBJETO  brinquedos  NÃO FORAM INCLUSAS, significando que a PROPRIEDADE  brinquedos.favorito  de  bill  e  apollo  são PROPRIEDADES IGUAIS e COMPARTILHAM ESTE MESMO PONTO na MEMÓRIA. Veja a comparação lógica: */
+
+console.log(`Sâo iguais? ${bill.brinquedos.favorito === apollo.brinquedos.favorito}`) // VALOR e TIPO iguais?
+
+/* É necessário que se faça uma COPIA MANUAL do OBJETO  brinquedos  para fazer esta SEPARAÇÃO. 
+***RETIRE O COMENTÁRIO DA LINHA 27 E TORNE UM COMENTÁRIO A LINHA 26. Feito isto:
+linha 27:  apollo  RECEBE uma CÓPIA do OBJETO  bill  E também uma CÓPIA do OBJETO  brinquedos  . Problema resolvido. Agora a comparação lógica retorna FALSE e apenas o VALOR do brinquedo favorito de  bill  foi alterado e, o de  apollo  , continua "Bola". */
+
+console.log('--------------------')
+
+// O Spread Operator PERMITE que se faça ALTERAÇÕES no NOVO OBJETO DENTRO da PRÓPRIA ESTRUTURA. Ex:
+const sputnik = { // COPIOU-SE o OBJETO  apollo  como 'default' e SOBRESCREVEU-SE o VALOR da PROPRIEDADE  idade  .
+    ...apollo,
+    idade: 17,
+    brinquedos: {...apollo.brinquedos, // ↑ Mesma lógica.
+        favorito: 'Cadela Laika'}
+}
+
+console.log(sputnik)
+
+console.log('--------------------OUTROS CASOS--------------------')
+
+// Perceba que, nos exemplos dados acima, por se tratar de OBJETOS, colocou-se o Spread Operator dentro de CHAVES. Da mesma forma, quando se tratar de ARRAYS, coloca-se o Spread Operator dentro de COLCHETES. Exemplos:
+
+// Combinando os ELEMENTOS de 2 ARRAYS distintos dentro de um único ARRAY:
+const numeros1 = [1, 2, 3]
+const numeros2 = [4, 5, 6]
+const numerosCombinados = [...numeros1, ...numeros2]
+console.log(numerosCombinados)
+
+console.log('--------------------')
+
+// COPIANDO PARTES do ARRAY  numerosCombinados  , ao transformar SEUS ELEMENTOS em VARIÁVEIS dentro de um NOVO ARRAY:
+const [um, dois, ...resto] = numerosCombinados
+console.log(um)
+console.log(dois)
+console.log(resto)
+
+/*
+O que é Rest Operator (...) ?
+
+O Operador Rest (...) permite a criação de um PARÂMETRO CAPAZ de RECEBER um NÚMERO INDEFINIDO de ARGUMENTOS, guardando-os dentro de um ARRAY. Exemplos (rode este código (Node.js Exec)):
+
+// O parâmetro  ...otherInfo  é um Rest Parameter que pode guardar uma quantidade INFINITA de ARGUMENTOS.
+
+function myBio(firstName, lastName, ...otherInfos) { 
+    return otherInfos;
+}
+
+console.log(myBio("Elon", "Musk", "Male", "Tesla", "SpaceX", "blablabla"))
+
+console.log('----------')
+
+// Esta função utiliza o Rest Parameter  ...nums  para RECEBER uma QUANTIDADE INDEFINIDA de NÚMEROS. E, devido ao fato destes serem guardados dentro de um ARRAY, é possível fazer um LOOP através dos VALORES deste array, guardando-os dentro da variável  total  , que irá RECEBER a SOMA entre o TOTAL e CADA NÚMERO do ARRAY, ACUMULANDO os VALORES dentro de si.
+
+function sum(...nums) {
+    let total = 0
+
+    for (let x of nums) {
+        total += x
+    }
+    return total
+}
+console.log(sum(11, 22, 33, 44, 55, 66, 77, 88, 99))
+
+*/
+
 /*
 TRANSCRIÇÃO
 0:00
