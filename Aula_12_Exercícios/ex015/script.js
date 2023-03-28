@@ -49,7 +49,7 @@ function verificar() {
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos um(a) ${gênero} com ${idade} anos.`
+        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
         res.appendChild(img) // Colocamos esse comando pra ADICIONAR via JS um elemento adicional na div 'res'.
     }
 
