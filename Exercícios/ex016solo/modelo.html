@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!--Configura o idioma do navegador...-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title> <!--Título da aba do documento...-->
+    <link rel="stylesheet" href="estilo.css"> <!--Chamada do estilo.css externo...-->
+</head>
+
+<body>
+    <header>
+        <h1>Vamos contar!</h1>
+    </header>
+
+    <section>
+        <div id="inputs">
+            <p>
+                Número inicial: <input type="number" name="numeroinicial" id="numeroinicial" min="0">
+            </p>
+            <p>
+                Número final: <input type="number" name="numerofinal" id="numerofinal" min="0">
+            </p>
+            <p>
+                Passo (intervalo de contagem): <input type="number" name="numeropasso" id="numeropasso" min="0">
+            </p>
+            <p>
+                <input type="submit" value="Comece a contar..." onclick="contar()">
+            </p>
+        </div>
+
+        <div id="divresultado">
+            Preencha os dados acima e clique no botão para contar!
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+
+    <script src="script.js"></script> <!--Chamada do script.js externo...-->
+</body>
+</html>
